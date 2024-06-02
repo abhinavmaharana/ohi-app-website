@@ -5,7 +5,6 @@ import MakeMoney from "@/components/make-money/MakeMoney";
 import PeopleWithFameTick from "@/components/people-with-fame-tick/PeopleWithFameTick";
 import FormGradientCard from "@/components/shared/card/FormGradientCard";
 import GradientCard from "@/components/shared/card/GradientCard";
-import LeftEffect from "@/components/shared/shades/LeftEffect";
 
 export default function HomePage() {
   return (
