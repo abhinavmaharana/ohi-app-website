@@ -1,9 +1,9 @@
 import { Card } from "@/components/ui/card";
-import HeroImg from '@/assets/social.png';
+import HeroImg from '@/assets/makeviral.png';
 
 export default function FormGradientCard() {
   return (
-    <Card className="bg-gradient-to-r from-[#E8D0A7] via-[#D284B3] to-[#7EACDA] p-5 border-none rounded-[58px] mt-[75px]">
+    <Card className="bg-[#016241] p-5 border-none rounded-[58px] mt-[75px]">
             <div className="flex flex-col md:flex-row items-center md:items-center p-4 md:p-8">
                 <div className="w-full md:w-1/2 flex justify-center md:justify-start">
                     <img

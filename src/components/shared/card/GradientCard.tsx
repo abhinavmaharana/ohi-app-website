@@ -1,5 +1,5 @@
 import { Card } from "@/components/ui/card";
-import HeroImg from '@/assets/coffeemachine.png';
+import HeroImg from '@/assets/cafe.png';
 
 type Props = {
     title: string,
@@ -10,7 +10,7 @@ type Props = {
 export default function GradientCard({ title, subTitle, description }: Props) {
     console.log(title, subTitle, description);
     return (
-        <Card className="bg-gradient-to-r from-[#E8D0A7] via-[#D284B3] to-[#7EACDA] p-5 border-none rounded-[58px] mt-[75px]">
+        <Card className="bg-[#016241] p-5 border-none rounded-[58px] mt-[75px]">
             <div className="flex flex-col md:flex-row items-center md:items-center p-4 md:p-8">
                 <div className="w-full md:w-1/2 flex justify-center md:justify-start">
                     <img

@@ -1,10 +1,11 @@
+import LogoIcon from "@/assets/logo.png";
 export default function Footer() {
   return (
     <div className="flex flex-col items-center p-20 bg-zinc-950 max-md:px-5">
       <div className="flex gap-5 justify-between items-start mt-6 w-full max-w-[1248px] max-md:flex-wrap max-md:max-w-full">
         <img
           loading="lazy"
-          src="https://cdn.builder.io/api/v1/image/assets/TEMP/05f63f9dadb595bd4309e61a5cabf1e180430377ccbf42a494a24711fd2a1a1d?"
+          src={LogoIcon}
           className="shrink-0 aspect-[1.69] w-[91px]"
         />
         <div className="flex gap-[57px] justify-between self-stretch text-base text-start text-zinc-400 lg:-ml-[250px]">

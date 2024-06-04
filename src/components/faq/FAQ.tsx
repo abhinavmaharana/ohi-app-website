@@ -30,7 +30,7 @@ export default function FAQ() {
     <section className="py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mb-16">
-          <h2 className="text-4xl font-manrope text-center font-bold text-white leading-[3.25rem]">
+          <h2 className="text-4xl font-manrope text-center font-bold text-[#1C1C1C] leading-[3.25rem]">
             Common Queries answered here
           </h2>
         </div>
@@ -38,7 +38,7 @@ export default function FAQ() {
           {accordions.map((accordion, index) => (
             <div
               key={index}
-              className={`accordion bg-[#1C1C1C] p-4 rounded-xl transition duration-500 mb-8 lg:p-4 ${openAccordion === index ? 'accordion-active:bg-indigo-50 accordion-active:border-indigo-600' : ''}`}
+              className={`accordion bg-white border-2 border-[#D4D2E3] p-4 rounded-xl transition duration-500 mb-8 lg:p-4 ${openAccordion === index ? 'accordion-active:bg-indigo-50 accordion-active:border-indigo-600' : ''}`}
               id={`heading-${index}`}
             >
               <button
@@ -46,9 +46,9 @@ export default function FAQ() {
                 aria-controls={`collapse-${index}`}
                 onClick={() => toggleAccordion(index)}
               >
-                <h5 className="text-white">{accordion.question}</h5>
+                <h5 className="text-[#1C1C1C]">{accordion.question}</h5>
                 <svg
-                  className={`w-6 h-6 text-white transition duration-500 ${openAccordion === index ? 'hidden' : 'block'} group-hover:text-white origin-center`}
+                  className={`w-6 h-6 text-[#1C1C1C] transition duration-500 ${openAccordion === index ? 'hidden' : 'block'} group-hover:text-[#1C1C1C] origin-center`}
                   viewBox="0 0 24 24"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
@@ -62,7 +62,7 @@ export default function FAQ() {
                   ></path>
                 </svg>
                 <svg
-                  className={`w-6 h-6 text-white transition duration-500 ${openAccordion === index ? 'block' : 'hidden'} group-hover:text-white`}
+                  className={`w-6 h-6 text-[#1C1C1C] transition duration-500 ${openAccordion === index ? 'block' : 'hidden'} group-hover:text-[#1C1C1C]`}
                   viewBox="0 0 24 24"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
@@ -82,7 +82,7 @@ export default function FAQ() {
                 aria-labelledby={`heading-${index}`}
                 style={{ maxHeight: openAccordion === index ? '250px' : '0' }}
               >
-                <p className="text-base text-white font-normal leading-6 mt-6">
+                <p className="text-base text-[#1C1C1C] font-normal leading-6 mt-6">
                   {accordion.answer}
                 </p>
               </div>

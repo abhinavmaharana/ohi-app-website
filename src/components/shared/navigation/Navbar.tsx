@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
-import LogoIcon from "@/assets/logo2.png";
+import LogoIcon from "@/assets/logo.png";
 
 export default function Navbar() {
   const [state, setState] = useState(false);
@@ -15,7 +15,7 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="text-white w-full md:border-0 flex items-center justify-between p-4 relative">
+    <nav className="text-black w-full md:border-0 flex items-center justify-between p-4 relative">
       {/* Logo */}
       <div className="flex items-center">
         <img src={LogoIcon} alt="Logo" className="h-[54px] w-[91px]" />
@@ -46,7 +46,7 @@ export default function Navbar() {
             {menu.title}
           </a>
         ))}
-        <Button className="bg-[#7456F2] px-[35px] py-[28px] rounded-[14px] mt-4 md:mt-0" onClick={() => setState(false)}>
+        <Button className="bg-[#006241] px-[35px] py-[28px] rounded-[14px] mt-4 md:mt-0" onClick={() => setState(false)}>
           Download Now
         </Button>
       </div>
