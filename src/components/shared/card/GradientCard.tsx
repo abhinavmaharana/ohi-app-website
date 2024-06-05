@@ -19,12 +19,12 @@ export default function GradientCard({ title, subTitle, description }: Props) {
                         className="w-[500px] h-auto"
                     />
                 </div>
-                <div className="w-full md:w-1/2 mb-4 md:mb-0 space-y-[46px]">
+                <div className="w-full md:w-1/2 mb-4 md:mb-0 space-y-5 lg:space-y-[46px] mt-5 md:mt-0">
                     <h1 className="text-3xl md:text-[48px] font-bold mb-2 text-white">{title}</h1>
                     <h2 className="text-xl md:text-3xl mb-2 text-white">{subTitle}</h2>
                     <p className="text-lg md:text-xl text-[#FFFFFF]">{description}</p>
                     <div className="flex items-center space-x-[29px]">
-                        <h1 className="text-[34px] md:text-[64px] font-bold mb-2 text-white">50k +</h1>
+                        <h1 className="text-[34px] md:text-[64px] font-bold mb-2 text-white">50k+</h1>
                         <p className="text-white md:text-[24px] w-[200px]">Locations People Checked in</p>
                     </div>
                 </div>
