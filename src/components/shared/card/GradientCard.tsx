@@ -10,7 +10,7 @@ type Props = {
 export default function GradientCard({ title, subTitle, description }: Props) {
     console.log(title, subTitle, description);
     return (
-        <Card className="bg-[#016241] p-5 border-none rounded-[58px] mt-[75px]">
+        <Card className="bg-[#016241] p-5 border-none rounded-[20px] xl:rounded-[58px] mt-[75px]">
             <div className="flex flex-col md:flex-row items-center md:items-center p-4 md:p-8">
                 <div className="w-full md:w-1/2 flex justify-center md:justify-start">
                     <img

@@ -7,11 +7,11 @@ export default function Navbar() {
   const [state, setState] = useState(false);
 
   const menus = [
-    { title: "About us", path: "/your-path" },
-    { title: "At Cafe", path: "/your-path" },
-    { title: "Earn Money", path: "/your-path" },
-    { title: "Make Money", path: "/your-path" },
-    { title: "Make Content", path: "/your-path" },
+    { title: "About us", path: "#about" },
+    { title: "At Cafe", path: "#atcafe" },
+    { title: "Earn Money", path: "#earn" },
+    { title: "Make Money", path: "#make" },
+    { title: "Make Content", path: "#content" },
   ];
 
   return (
@@ -32,7 +32,7 @@ export default function Navbar() {
 
       {/* Nav Links */}
       <div
-        className={`fixed inset-0 z-40 flex flex-col items-center justify-center bg-[#1C1C1C] transition-transform transform ${
+        className={`fixed inset-0 z-40 flex flex-col items-center justify-center bg-white transition-transform transform ${
           state ? "translate-x-0" : "translate-x-full"
         } md:static md:flex md:flex-row md:items-center md:justify-end md:translate-x-0 md:bg-transparent space-x-5`}
       >
