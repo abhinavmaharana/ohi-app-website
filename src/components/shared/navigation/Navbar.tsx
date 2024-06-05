@@ -9,9 +9,9 @@ export default function Navbar() {
   const menus = [
     { title: "About us", path: "#about" },
     { title: "At Cafe", path: "#atcafe" },
-    { title: "Earn Money", path: "#earn" },
-    { title: "Make Money", path: "#make" },
-    { title: "Make Content", path: "#content" },
+    { title: "Get Famous", path: "#earn" },
+    { title: "Earn Money", path: "#make" },
+    { title: "Make Content Viral", path: "#content" },
   ];
 
   return (
