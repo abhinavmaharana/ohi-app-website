@@ -9,7 +9,7 @@ export default function Hero() {
         <p className="text-lg md:text-xl text-[#989898]"> A social network with Authentic Connects, Fame, Stardom in Cafes, lounges, airports.</p>
         <Button className="bg-[#006241] px-[35px] py-[28px] rounded-[14px]">Download Now</Button>
       </div>
-      <div className="w-full md:w-1/2 flex justify-center md:justify-end">
+      <div className="w-full md:w-1/2 flex justify-center md:justify-end ">
         <img 
           src={HeroImg} 
           alt="Hero Image" 

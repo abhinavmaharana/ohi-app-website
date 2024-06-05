@@ -7,7 +7,7 @@ type Props = {
 export default function UserCard({username}: Props) {
     console.log(username)
   return (
-    <Card className='bg-[#1A1229] md:w-[249px] py-[21px] px-[24px] border-none rounded-xl space-y-[24px]'>
+    <Card className='bg-[#1A1229] md:w-[249px] py-[21px] px-[24px] border-none rounded-xl space-y-[24px] '>
         <div className='bg-[#4FDE7E] py-[21px] px-[24px] rounded-[10px] h-[179px]'>
 
         </div>
