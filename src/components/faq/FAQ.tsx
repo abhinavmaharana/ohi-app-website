@@ -9,20 +9,32 @@ export default function FAQ() {
 
   const accordions = [
     {
-      question: 'How can I reset my password?',
-      answer: 'To reset your password, click the "Forgot Password" link on the login page, enter your email address, and follow the instructions sent to your email to reset your password.'
+      question: 'How can I find Caferoom?',
+      answer: 'If you are in a cafe checkin to the caferoom by tapping on the card. if not in a cafe you can request to enter the caferoom where your friends are.'
     },
     {
-      question: 'How do I create an account?',
-      answer: 'To create an account, find the "Sign up" or "Create account" button, fill out the registration form with your personal information, and click "Create account" or "Sign up." Verify your email address if needed, and then log in to start using the platform.'
+      question: 'How can I invite someone to Caferoom?',
+      answer: 'Now inviting your friends to Cafe chatroom is super cool. Tap on invite requests in chatroom & chose your friends to caferoom or let someone in who has asked for an invite in caferoom.'
     },
     {
-      question: 'Where can I find my order history?',
-      answer: 'You can find your order history by logging into your account and navigating to the "Order History" section under your profile. There, you will see a list of all your past orders and their statuses.'
+      question: 'How can i ask for Caferoom invites?',
+      answer: 'If you are not in a Cafe you can ask for caferoom invites from your friends who have posted a pic/video in feeds and to add on You can access as many caferooms as you want from our popular live caferooms.'
     },
     {
-      question: 'Where can I find my order history?',
-      answer: 'You can find your order history by logging into your account and navigating to the "Order History" section under your profile. There, you will see a list of all your past orders and their statuses.'
+      question: 'Is my number accessible to others in the network?',
+      answer: 'O hi never shares anyone’s phone number or personal details publicly. Your personal details are safe & sound with us.'
+    },
+    {
+      question: 'How do I start a conversation with someone?',
+      answer: 'You can start chatting once you are connected.'
+    },
+    {
+      question: 'Do I have to pay for using O hi or it is free?',
+      answer: 'O hi is Free! Free! Free! and will always be. There is no fee or amount we charge to use our app.'
+    },
+    {
+      question: 'Do I have to pay for using O hi or it is free?',
+      answer: 'O hi is Free! Free! Free! and will always be. There is no fee or amount we charge to use our app.'
     }
   ];
 
