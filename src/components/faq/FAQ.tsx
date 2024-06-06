@@ -51,7 +51,7 @@ export default function FAQ() {
             <div
               key={index}
               className={`accordion bg-white border-2 p-4 rounded-xl transition duration-500 mb-8 lg:p-4 ${
-                openAccordion === index ? 'bg-green-100 border-[#016241] border-dashed' : 'border-[#D4D2E3]'
+                openAccordion === index ? 'bg-[#016241]/10 border-[#016241] border-dashed' : 'border-[#D4D2E3]'
               }`}
               id={`heading-${index}`}
             >
