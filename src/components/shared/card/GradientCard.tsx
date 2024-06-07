@@ -1,5 +1,5 @@
 import { Card } from "@/components/ui/card";
-import HeroImg from '@/assets/cafe.png';
+import HeroImg from '@/assets/girl-group.jpg';
 import { motion } from "framer-motion";
 
 type Props = {
@@ -41,7 +41,7 @@ export default function GradientCard({ title, subTitle, description }: Props) {
                         <img
                             src={HeroImg}
                             alt="Hero Image"
-                            className="w-[500px] h-auto"
+                            className="w-[500px] h-auto rounded-md"
                         />
                     </motion.div>
                     <motion.div
