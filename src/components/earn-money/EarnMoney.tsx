@@ -1,4 +1,4 @@
-import HeroImg from '@/assets/earnmoney.png'
+import HeroImg from '@/assets/IMG_20240610_122816_829.jpg'
 
 type Props = {}
 
@@ -13,7 +13,7 @@ export default function EarnMoney({}: Props) {
         <img 
           src={HeroImg} 
           alt="Hero Image" 
-          className="w-[500px] h-auto animate-pulse"
+          className="w-[500px] h-auto animate-pulse rounded-md"
         />
       </div>
     </div>

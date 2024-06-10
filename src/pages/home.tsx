@@ -2,7 +2,7 @@ import EarnMoney from "@/components/earn-money/EarnMoney";
 import FAQ from "@/components/faq/FAQ";
 import Hero from "@/components/hero/Hero";
 import MakeMoney from "@/components/make-money/MakeMoney";
-import PeopleWithFameTick from "@/components/people-with-fame-tick/PeopleWithFameTick";
+// import PeopleWithFameTick from "@/components/people-with-fame-tick/PeopleWithFameTick";
 import FormGradientCard from "@/components/shared/card/FormGradientCard";
 import GradientCard from "@/components/shared/card/GradientCard";
 
@@ -15,7 +15,7 @@ export default function HomePage() {
       <EarnMoney />
       {/* <LeftEffect /> */}
       <MakeMoney />
-      <PeopleWithFameTick />
+      {/* <PeopleWithFameTick /> */}
       <FormGradientCard />
       <FAQ />
     </div>

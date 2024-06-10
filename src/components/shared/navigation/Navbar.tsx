@@ -47,7 +47,7 @@ export default function Navbar() {
           </a>
         ))}
         <Button className="bg-[#006241] px-[35px] py-[28px] rounded-[14px] mt-4 md:mt-0" onClick={() => setState(false)}>
-        Join Ohi
+        Join O hi
         </Button>
       </div>
 

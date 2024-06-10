@@ -16,8 +16,8 @@ import { Button } from "@/components/ui/button";
 
 export default function FormGradientCard() {
     const formSchema = z.object({
-        instagramlink: z.string(),
-        email: z.string(),
+        instagramlink: z.string().nonempty("Instagram link is required"),
+        email: z.string().nonempty("Email is required"),
     })
 
     const form = useForm({
