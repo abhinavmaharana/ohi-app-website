@@ -25,16 +25,16 @@ export default function FAQ() {
       answer: 'O hi never shares anyone’s phone number or personal details publicly. Your personal details are safe & sound with us.'
     },
     {
-      question: 'How do I start a conversation with someone?',
-      answer: 'You can start chatting once you are connected.'
-    },
-    {
       question: 'Do I have to pay for using O hi or it is free?',
       answer: 'O hi is Free! Free! Free! and will always be. There is no fee or amount we charge to use our app.'
     },
     {
-      question: 'Do I have to pay for using O hi or it is free?',
-      answer: 'O hi is Free! Free! Free! and will always be. There is no fee or amount we charge to use our app.'
+      question: 'How get my content viral?',
+      answer: 'Share your content on Ohi and get reshared by real people at cafes & airports. This will help you to get viral.'
+    },
+    {
+      question: 'How make money on Ohi?',
+      answer: 'You can make money on O Hi by resharing posts, simply checking in to cafes, inviting friends and followers to check in.'
     }
   ];
 
@@ -51,7 +51,7 @@ export default function FAQ() {
             <div
               key={index}
               className={`accordion bg-white border-2 p-4 rounded-xl transition duration-500 mb-8 lg:p-4 ${
-                openAccordion === index ? 'bg-[#016241]/15 border-[#016241] border-dashed' : 'border-[#D4D2E3]'
+                openAccordion === index ? 'back-active border-[#016241] border-dashed' : 'border-[#D4D2E3]'
               }`}
               id={`heading-${index}`}
             >

@@ -34,11 +34,11 @@ export default function FormGradientCard() {
   return (
     <Card className="bg-[#016241] p-5 border-none rounded-[20px] xl:rounded-[58px] mt-[75px]">
             <div className="flex flex-col md:flex-row items-center md:items-center p-4 md:p-8">
-                <div className="w-full md:w-1/2 flex justify-center md:justify-start animate-pulse">
+                <div className="w-full md:w-1/2 flex justify-center md:justify-start">
                     <img
                         src={HeroImg}
                         alt="Hero Image"
-                        className="w-[500px] h-auto"
+                        className="w-[500px] h-auto bounce"
                     />
                 </div>
                 <div className="w-full md:w-1/2 mb-4 md:mb-0 space-y-[46px]">
