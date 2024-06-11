@@ -27,7 +27,7 @@ export default function MakeMoney() {
             // remove bg-white dark:bg-slate-900
             className="flex-1 text-black dark:text-white border-neutral-200 dark:border-[#016241]"
           >
-            <div className="flex lg:flex-row flex-col lg:items-center p-3 py-6 md:p-5 lg:p-10 gap-2">
+            <div className="flex lg:flex-row flex-col lg:items-center p-3 py-6 md:p-5 lg:p-10 gap-8">
               <img
                 src={card.thumbnail}
                 alt={card.thumbnail}
