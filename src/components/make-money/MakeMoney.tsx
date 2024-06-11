@@ -38,7 +38,7 @@ export default function MakeMoney() {
                   {card.title}
                 </h1>
                 <p className="text-start text-white-100 mt-3 font-semibold">
-                  {card.desc}
+                  {/* {card.desc} */}
                 </p>
               </div>
             </div>
