@@ -41,7 +41,7 @@ export default function GradientCard({ title, subTitle, description }: Props) {
                         <img
                             src={HeroImg}
                             alt="Hero Image"
-                            className="w-[500px] h-auto rounded-md bounce"
+                            className="w-[500px] h-auto rounded-md"
                         />
                     </motion.div>
                     <motion.div

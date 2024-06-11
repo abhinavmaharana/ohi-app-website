@@ -38,7 +38,7 @@ export default function FormGradientCard() {
                     <img
                         src={HeroImg}
                         alt="Hero Image"
-                        className="w-[500px] h-auto bounce rounded-md"
+                        className="w-[500px] h-auto rounded-md"
                     />
                 </div>
                 <div className="w-full md:w-1/2 mb-4 md:mb-0 space-y-[46px]">

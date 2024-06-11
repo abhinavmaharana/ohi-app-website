@@ -13,7 +13,7 @@ export default function EarnMoney({}: Props) {
         <img 
           src={HeroImg} 
           alt="Hero Image" 
-          className="w-[500px] h-auto  bounce rounded-md"
+          className="w-[500px] h-auto rounded-md"
         />
       </div>
     </div>

@@ -13,7 +13,7 @@ export default function Hero() {
         <img 
           src={HeroImg} 
           alt="Hero Image" 
-          className="w-[500px] h-auto bounce"
+          className="w-[500px] h-auto"
         />
       </div>
     </div>
