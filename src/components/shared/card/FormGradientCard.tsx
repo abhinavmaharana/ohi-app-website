@@ -13,6 +13,7 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
+import { Asterisk } from "lucide-react";
 
 export default function FormGradientCard() {
     const formSchema = z.object({
@@ -57,7 +58,10 @@ export default function FormGradientCard() {
                                         render={({}) => (
                                             <FormItem className="form-area-4">
                                                 <FormLabel className="font-avenirRegular text-[16px] font-medium text-[#FFFFFF]">
-                                                    Instagram Post Link
+                                                    <div className="flex">
+                                                        <h1>Instagram Post Link</h1>
+                                                        <Asterisk className="text-red-500 w-4 -mt-2"/>
+                                                    </div>
                                                 </FormLabel>
                                                 <FormControl>
                                                     <Input
@@ -77,7 +81,10 @@ export default function FormGradientCard() {
                                         render={({}) => (
                                             <FormItem className="form-area-4">
                                                 <FormLabel className="font-avenirRegular text-[16px] font-medium text-[#FFFFFF]">
-                                                    Email
+                                                    <div className="flex">
+                                                        <h1>Email</h1>
+                                                        <Asterisk className="text-red-500 w-4 -mt-2"/>
+                                                    </div>
                                                 </FormLabel>
                                                 <FormControl>
                                                     <Input
