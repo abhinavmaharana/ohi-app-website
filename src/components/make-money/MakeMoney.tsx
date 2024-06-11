@@ -37,7 +37,7 @@ export default function MakeMoney() {
                 <ul className="text-start text-xl md:text-2xl font-bold list-disc">
                   <li>On your check -in at a cafe/ airport</li>
                   <li>On your friends check-in at a cafe / airport</li>
-                  <li>Bonus Freebie points</li>
+                  <li>Bonus freebie point  when they check-in at a cafe / airport</li>
                   <li>Resharing content</li>
                 </ul>
                 {/* <h1 className="text-start text-xl md:text-2xl font-bold">
