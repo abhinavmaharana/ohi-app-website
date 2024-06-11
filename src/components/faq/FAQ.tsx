@@ -17,10 +17,6 @@ export default function FAQ() {
       answer: 'Now inviting your friends to Cafe chatroom is super cool. Tap on invite requests in chatroom & chose your friends to caferoom or let someone in who has asked for an invite in caferoom.'
     },
     {
-      question: 'How can i ask for Caferoom invites?',
-      answer: 'If you are not in a Cafe you can ask for caferoom invites from your friends who have posted a pic/video in feeds and to add on You can access as many caferooms as you want from our popular live caferooms.'
-    },
-    {
       question: 'Is my number accessible to others in the network?',
       answer: 'O hi never shares anyone’s phone number or personal details publicly. Your personal details are safe & sound with us.'
     },
@@ -43,7 +39,7 @@ export default function FAQ() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mb-16">
           <h2 className="text-4xl font-manrope text-center font-bold text-[#1C1C1C] leading-[3.25rem]">
-            FAQ
+            FAQ's
           </h2>
         </div>
         <div className="accordion-group" data-accordion="default-accordion">
