@@ -17,7 +17,7 @@ export default function Footer() {
             <div className="mt-4">Contact Us</div>
             <div className="mt-4">Privacy Policy</div>
             <div className="mt-4">Terms & Condition</div>
-            <div className="mt-4">Career</div>
+            {/* <div className="mt-4">Career</div> */}
           </div>
           <div className="flex flex-col self-start">
             <div className="font-medium text-white leading-[150%]">
@@ -42,8 +42,7 @@ export default function Footer() {
       </div>
       <div className="flex gap-5 justify-between mt-28 w-full max-w-[1248px] max-md:flex-wrap max-md:mt-10 max-md:max-w-full">
         <div className="text-base text-center text-zinc-400 max-md:max-w-full">
-          All Right Reserved.Copyright © 2022, All Rights Reserved. Made With ❤️
-          by Mattr
+          All Right Reserved.Copyright © 2022, All Rights Reserved.
         </div>
         <div className="flex gap-4">
           <img
