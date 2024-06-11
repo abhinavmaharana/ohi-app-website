@@ -11,7 +11,7 @@ export default function HomePage() {
     <div className="space-y-[100px]">
       <Hero />
       {/* <LeftEffect /> */}
-      <GradientCard title="When At a Cafe ?" subTitle="Checkin to digital room" description="Check-in to Caferooms of Cafes, Lounges, Airports you visit and enter the world of authentic conversations with people in same Cafe,lounge, airport”" />
+      <GradientCard title="When At a Cafe ?" subTitle="Check-in to digital room" description="Check-in to Caferooms of Cafes, Lounges, Airports you visit and enter the world of authentic conversations with people in same Cafe,lounge, airport”" />
       <EarnMoney />
       {/* <LeftEffect /> */}
       <MakeMoney />
