@@ -8,7 +8,7 @@ export default function MakeMoney() {
         Make Money in Real Life
       </h1>
 
-      <div className="w-full mt-16">
+      <div className="w-full mt-16 flex items-center justify-center">
         {realMoney.map((card) => (
           <Button
             key={card.id}
@@ -34,10 +34,10 @@ export default function MakeMoney() {
                 className="lg:w-32 md:w-20 w-16 "
               />
               <div className="lg:ms-5 text-white">
-                <ul className="text-start text-xl md:text-2xl font-bold list-disc">
+                <ul className="text-start text-lg md:text-2xl font-bold list-disc">
                   <li>On your check -in at a cafe/ airport</li>
                   <li>On your friends check-in at a cafe / airport</li>
-                  <li>Bonus freebie point  when they check-in at a cafe / airport</li>
+                  <li>Bonus freebie point on the check-in at a cafe / airport</li>
                   <li>Resharing content</li>
                 </ul>
                 {/* <h1 className="text-start text-xl md:text-2xl font-bold">

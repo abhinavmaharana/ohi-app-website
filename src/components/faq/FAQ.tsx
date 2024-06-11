@@ -39,7 +39,7 @@ export default function FAQ() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mb-16">
           <h2 className="text-4xl font-manrope text-center font-bold text-[#1C1C1C] leading-[3.25rem]">
-            FAQ's
+            FAQs
           </h2>
         </div>
         <div className="accordion-group" data-accordion="default-accordion">
