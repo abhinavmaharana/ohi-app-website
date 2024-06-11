@@ -66,7 +66,7 @@ export default function FormGradientCard() {
                                                 <FormControl>
                                                     <Input
                                                         className="cursor-pointer border-none bg-[#F4F4F4] outline-none"
-                                                        placeholder="Enter Instragram Post Link"
+                                                        placeholder="Enter Instagram Post Link"
                                                     />
                                                 </FormControl>
                                                 <FormMessage />
