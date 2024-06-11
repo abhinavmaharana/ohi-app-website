@@ -42,7 +42,8 @@ export default function FormGradientCard() {
                     />
                 </div>
                 <div className="w-full md:w-1/2 mb-4 md:mb-0 space-y-[46px]">
-                    <h1 className="text-3xl md:text-[45px] font-bold mb-2 text-white mt-5 md:mt-0">Want to make content viral ?</h1>
+                    <h1 className="text-3xl md:text-[45px] font-bold mb-2 text-white mt-5 md:mt-0">Interested in making your content viral?</h1>
+                    <p className="text-white">Write to us a mail at contact@ohiapp.com <br/> After verifying your identity we'll give you the access.</p>
                     <div>
                         <Form {...form}>
                             <form

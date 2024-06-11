@@ -15,8 +15,8 @@ export default function Footer() {
             </div>
             <div className="mt-4">About Us</div>
             <div className="mt-4">Contact Us</div>
-            <div className="mt-4">Privacy Policy</div>
-            <div className="mt-4">Terms & Condition</div>
+            {/* <div className="mt-4">Privacy Policy</div>
+            <div className="mt-4">Terms & Condition</div> */}
             {/* <div className="mt-4">Career</div> */}
           </div>
           <div className="flex flex-col self-start">
