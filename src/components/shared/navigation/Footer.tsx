@@ -25,7 +25,7 @@ export default function Footer() {
             </div>
             <div className="mt-4">Terms & Condition</div>
             <div className="mt-4">Privacy Policy</div>
-            <div className="mt-4">FAQ</div>
+            <div className="mt-4">FAQ'S</div>
           </div>
         </div>
         <div className="hidden md:flex flex-col mt-1">
