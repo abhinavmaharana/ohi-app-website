@@ -1,5 +1,5 @@
 import { Card } from "@/components/ui/card";
-import HeroImg from '@/assets/makeviral.png';
+import HeroImg from '@/assets/IMG_4834.jpg';
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
@@ -38,7 +38,7 @@ export default function FormGradientCard() {
                     <img
                         src={HeroImg}
                         alt="Hero Image"
-                        className="w-[500px] h-auto bounce"
+                        className="w-[500px] h-auto bounce rounded-md"
                     />
                 </div>
                 <div className="w-full md:w-1/2 mb-4 md:mb-0 space-y-[46px]">

@@ -1,5 +1,5 @@
 import { Button } from "../ui/button";
-import HeroImg from '@/assets/heroimage.png'
+import HeroImg from '@/assets/heroimg.png'
 
 export default function Hero() {
   return (
@@ -13,7 +13,7 @@ export default function Hero() {
         <img 
           src={HeroImg} 
           alt="Hero Image" 
-          className="w-[500px] h-auto"
+          className="w-[500px] h-auto bounce"
         />
       </div>
     </div>
