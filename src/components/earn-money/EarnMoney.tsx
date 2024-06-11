@@ -1,4 +1,4 @@
-import HeroImg from '@/assets/IMG_20240610_122816_829.jpg'
+import HeroImg from '@/assets/hero1.png'
 
 type Props = {}
 
