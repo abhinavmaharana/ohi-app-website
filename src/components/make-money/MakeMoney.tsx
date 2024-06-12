@@ -3,7 +3,7 @@ import { Button } from "../ui/MovingBorders";
 
 export default function MakeMoney() {
   return (
-    <div className="py-20 w-full">
+    <div id="make" className="py-20 w-full">
       <h1 className="text-[#1C1C1C] font-bold text-4xl md:text-5xl text-center">
         Make Money in Real Life
       </h1>
