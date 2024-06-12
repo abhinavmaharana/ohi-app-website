@@ -13,7 +13,7 @@ export default function Footer() {
             <div className="font-medium text-white leading-[150%]">
               Quick Link
             </div>
-            <div className="mt-4">About Us</div>
+            <div className="mt-4"><a href="#about">About Us</a></div>
             <div className="mt-4">Contact Us</div>
             {/* <div className="mt-4">Privacy Policy</div>
             <div className="mt-4">Terms & Condition</div> */}
@@ -25,7 +25,7 @@ export default function Footer() {
             </div>
             <div className="mt-4">Terms & Condition</div>
             <div className="mt-4">Privacy Policy</div>
-            <div className="mt-4">FAQs</div>
+            <div className="mt-4"><a href="#faq">FAQs</a></div>
           </div>
         </div>
         <div className="hidden md:flex flex-col mt-1">
