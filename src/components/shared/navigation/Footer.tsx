@@ -24,7 +24,7 @@ export default function Footer() {
             <div className="font-medium text-white leading-[150%]">
               Legal Stuff
             </div>
-            <div className="mt-4">Terms & Condition</div>
+            <div className="mt-4"><Link to="/termcondition">Terms & Condition</Link></div>
             <div className="mt-4"><Link to="/privacy">Privacy Policy</Link></div>
             <div className="mt-4"><a href="#faq">FAQs</a></div>
           </div>

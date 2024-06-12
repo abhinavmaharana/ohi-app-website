@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import LogoIcon from "@/assets/logo.png";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   const [state, setState] = useState(false);
@@ -18,13 +19,13 @@ export default function Navbar() {
     <nav className="text-black w-full md:border-0 flex items-center justify-between p-4 relative">
       {/* Logo */}
       <div className="flex items-center">
-        <img src={LogoIcon} alt="Logo" className="h-[54px] w-[91px]" />
+        <Link to="/"><img src={LogoIcon} alt="Logo" className="h-[54px] w-[91px]" /></Link>
       </div>
 
       {/* Menu Icon for Mobile */}
-      <div className="md:hidden">
+      <div className="md:hidden z-50">
         {state ? (
-          <X onClick={() => setState(!state)} className="h-8 w-8 cursor-pointer" />
+          <X onClick={() => setState(!state)} className="h-8 w-8 cursor-pointer text-black" />
         ) : (
           <Menu onClick={() => setState(!state)} className="h-8 w-8 cursor-pointer" />
         )}
@@ -47,7 +48,7 @@ export default function Navbar() {
           </a>
         ))}
         <Button className="bg-[#006241] px-[35px] py-[28px] rounded-[14px] mt-4 md:mt-0" onClick={() => setState(false)}>
-        Join O hi
+          Join O hi
         </Button>
       </div>
 

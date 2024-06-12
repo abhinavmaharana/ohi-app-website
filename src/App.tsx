@@ -3,6 +3,7 @@ import Footer from "./components/shared/navigation/Footer";
 import Navbar from "./components/shared/navigation/Navbar";
 import HomePage from "./pages/home";
 import PrivacyPage from "./pages/privacy-page";
+import TermsPage from "./pages/terms-page";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/privacy" element={<PrivacyPage />} />
+            <Route path="/termcondition" element={<TermsPage />}/>
           </Routes>
         </div>
         <Footer />
