@@ -33,8 +33,8 @@ export default function MakeMoney() {
                 alt={card.thumbnail}
                 className="lg:w-32 md:w-20 w-16 "
               />
-              <div className="lg:ms-5 text-white">
-                <ul className="text-start text-lg md:text-2xl font-bold list-disc">
+              <div className="lg:mt-5 text-white">
+                <ul className="text-start text-md ml-5 lg:ml-0 md:text-2xl font-bold list-disc">
                   <li>On your check -in at a cafe/ airport</li>
                   <li>On your friends check-in at a cafe / airport</li>
                   <li>Bonus freebie point on the check-in at a cafe / airport</li>
