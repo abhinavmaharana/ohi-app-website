@@ -1,4 +1,5 @@
 import LogoIcon from "@/assets/logo.png";
+import { Link } from "react-router-dom";
 export default function Footer() {
   return (
     <div className="flex flex-col items-center p-20 bg-zinc-950 max-md:px-5">
@@ -24,7 +25,7 @@ export default function Footer() {
               Legal Stuff
             </div>
             <div className="mt-4">Terms & Condition</div>
-            <div className="mt-4">Privacy Policy</div>
+            <div className="mt-4"><Link to="/privacy">Privacy Policy</Link></div>
             <div className="mt-4"><a href="#faq">FAQs</a></div>
           </div>
         </div>

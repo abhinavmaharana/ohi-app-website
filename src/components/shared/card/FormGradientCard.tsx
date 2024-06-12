@@ -17,6 +17,7 @@ import { Asterisk } from "lucide-react";
 
 export default function FormGradientCard() {
     const formSchema = z.object({
+        name: z.string().nonempty("Name is required"),
         instagramlink: z.string().nonempty("Instagram link is required"),
         // email: z.string().nonempty("Email is required"),
     });
@@ -24,6 +25,7 @@ export default function FormGradientCard() {
     const form = useForm({
         resolver: zodResolver(formSchema),
         defaultValues: {
+            name: "",
             instagramlink: "",
             // email: ""
         }
@@ -35,11 +37,28 @@ export default function FormGradientCard() {
 
     const handleContactClick = () => {
         const values = form.getValues();
-        const instagramLink = encodeURIComponent(values.instagramlink);
-        // const email = encodeURIComponent(values.email);
+        const name = values.name.trim();
+        const instagramLink = values.instagramlink.trim();
+
+        if (!name || !instagramLink) {
+            // Optionally, you can set error messages in the form
+            if (!name) {
+                form.setError("name", {
+                    type: "manual",
+                    message: "Name is required",
+                });
+            }
+            if (!instagramLink) {
+                form.setError("instagramlink", {
+                    type: "manual",
+                    message: "Instagram link is required",
+                });
+            }
+            return;
+        }
 
         const subject = encodeURIComponent("Contact Request: Viral Content");
-        const body = encodeURIComponent(`Instagram Post Link: ${instagramLink}`);
+        const body = encodeURIComponent(`Hello Team,\n\nMy name is ${name}.\nHere is my Instagram post link: ${instagramLink}\n\nBest regards,\n${name}`);
         
         window.location.href = `mailto:contact@ohiapp.com?subject=${subject}&body=${body}`;
     };
@@ -63,6 +82,30 @@ export default function FormGradientCard() {
                                 className="space-y-6"
                                 onSubmit={form.handleSubmit(onSubmit)}
                             >
+                                <div>
+                                    <FormField
+                                        control={form.control}
+                                        name="name"
+                                        render={({ field }) => (
+                                            <FormItem className="form-area-4">
+                                                <FormLabel className="font-avenirRegular text-[16px] font-medium text-[#FFFFFF]">
+                                                    <div className="flex">
+                                                        <h1>Name</h1>
+                                                        <Asterisk className="text-red-500 w-4 -mt-2"/>
+                                                    </div>
+                                                </FormLabel>
+                                                <FormControl>
+                                                    <Input
+                                                        className="cursor-pointer border-none bg-[#F4F4F4] outline-none"
+                                                        placeholder="Enter your name"
+                                                        {...field}
+                                                    />
+                                                </FormControl>
+                                                <FormMessage />
+                                            </FormItem>
+                                        )}
+                                    />
+                                </div>
                                 <div>
                                     <FormField
                                         control={form.control}
@@ -113,6 +156,7 @@ export default function FormGradientCard() {
                                 </div> */}
                                 <div>
                                     <Button
+                                        type="button"
                                         className="w-full font-medium bg-[#0F051D] cursor-pointer"
                                         onClick={handleContactClick}
                                     >
