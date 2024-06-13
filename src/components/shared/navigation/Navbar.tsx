@@ -2,17 +2,18 @@ import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import LogoIcon from "@/assets/logo.png";
 import { Link } from "react-router-dom";
-import PlatformDialog from "../platform-dialog/PlatformDialog";
+// import PlatformDialog from "../platform-dialog/PlatformDialog";
+import { Button } from "@/components/ui/button";
 
 export default function Navbar() {
   const [state, setState] = useState(false);
 
   const menus = [
-    { title: "About us", path: "#about" },
-    { title: "At Cafe", path: "#atcafe" },
-    { title: "Get Famous", path: "#earn" },
-    { title: "Earn Money", path: "#make" },
-    { title: "Make Content Viral", path: "#content" },
+    { title: "About us", path: "/#about" },
+    { title: "At Cafe", path: "/#atcafe" },
+    { title: "Get Famous", path: "/#earn" },
+    { title: "Earn Money", path: "/#make" },
+    { title: "Make Content Viral", path: "/#content" },
   ];
 
   return (
@@ -47,7 +48,11 @@ export default function Navbar() {
             {menu.title}
           </a>
         ))}
-       <PlatformDialog />
+       <a href="https://chat.ohiapp.com/chatroom">
+       <Button className="bg-[#006241] hover:bg-[#006241] px-[35px] py-[28px] rounded-[14px] mt-4 md:mt-0">
+          Join O hi
+        </Button>
+       </a>
       </div>
 
       {/* Overlay */}

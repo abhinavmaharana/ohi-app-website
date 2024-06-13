@@ -1,6 +1,6 @@
 export default function Terms() {
   return (
-    <div className="space-y-5 mb-10">
+    <div id="terms" className="space-y-5 mb-10">
         <div className="space-y-4">
             <h1 className="text-xl font-bold">Revised on 08 October 2023</h1>
             <p>Terms of use</p>
