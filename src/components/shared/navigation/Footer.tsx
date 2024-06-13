@@ -65,6 +65,13 @@ export default function Footer() {
               className="shrink-0 w-6 aspect-square"
             />
           </a>
+          <a href="https://www.linkedin.com/company/o-hi-social-network/">
+          <img
+            loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/1edc6080d9b69b0bc0c76df1a3c919db5f6ad96ad6a2c1d2629cd9c7bc5a5089?"
+            className="shrink-0 w-6 aspect-square"
+          />
+          </a>
           <a href="https://www.instagram.com/ohi_app?igsh=M2htNjJ3NWMyYnBt">
             <img
               loading="lazy"
