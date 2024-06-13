@@ -3,7 +3,8 @@ import { useState } from "react";
 import LogoIcon from "@/assets/logo.png";
 import { Link } from "react-router-dom";
 // import PlatformDialog from "../platform-dialog/PlatformDialog";
-import { Button } from "@/components/ui/button";
+// import { Button } from "@/components/ui/button";
+import PlatformDialog from "../platform-dialog/PlatformDialog";
 
 export default function Navbar() {
   const [state, setState] = useState(false);
@@ -48,11 +49,12 @@ export default function Navbar() {
             {menu.title}
           </a>
         ))}
-       <a href="https://chat.ohiapp.com/chatroom">
+       {/* <a href="https://chat.ohiapp.com/chatroom">
        <Button className="bg-[#006241] hover:bg-[#006241] px-[35px] py-[28px] rounded-[14px] mt-4 md:mt-0">
           Join O hi
         </Button>
-       </a>
+       </a> */}
+       <PlatformDialog />
       </div>
 
       {/* Overlay */}

@@ -25,7 +25,7 @@ export default function Footer() {
               Quick Link
             </div>
             <div className="mt-4"><a href="#about">About Us</a></div>
-            <div className="mt-4">Contact Us</div>
+            <div className="mt-4"><a href="mailto:contact@ohiapp.com">Contact Us</a></div>
           </div>
           <div className="flex flex-col self-start">
             <div className="font-medium text-white leading-[150%]">
