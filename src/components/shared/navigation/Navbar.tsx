@@ -3,6 +3,7 @@ import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import LogoIcon from "@/assets/logo.png";
 import { Link } from "react-router-dom";
+import PlatformDialog from "../platform-dialog/PlatformDialog";
 
 export default function Navbar() {
   const [state, setState] = useState(false);
@@ -47,9 +48,7 @@ export default function Navbar() {
             {menu.title}
           </a>
         ))}
-        <Button className="bg-[#006241] px-[35px] py-[28px] rounded-[14px] mt-4 md:mt-0" onClick={() => setState(false)}>
-          Join O hi
-        </Button>
+       <PlatformDialog />
       </div>
 
       {/* Overlay */}

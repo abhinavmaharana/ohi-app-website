@@ -4,7 +4,7 @@ export const realMoney = [
       title: "On your check -in at a cafe/ airport",
       desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
       className: "md:col-span-2",
-      thumbnail: "/reward.png",
+      thumbnail: "/rupee.png",
     },
     // {
     //   id: 2,
