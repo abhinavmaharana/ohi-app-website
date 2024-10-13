@@ -16,13 +16,13 @@ export default function HomeNew() {
                 <Card className="w-[304px] h-[543px] rounded-[8px]">
                     <video></video>
                 </Card>
-                <Card className="w-[304px] h-[543px] rounded-[8px]">
+                <Card className="hidden lg:block w-[304px] h-[543px] rounded-[8px]">
                     <video></video>
                 </Card>
-                <Card className="w-[304px] h-[543px] rounded-[8px]">
+                <Card className="hidden lg:block w-[304px] h-[543px] rounded-[8px]">
                     <video></video>
                 </Card>
-                <Card className="w-[304px] h-[543px] rounded-[8px]">
+                <Card className="hidden lg:block w-[304px] h-[543px] rounded-[8px]">
                     <video></video>
                 </Card>
             </div>
