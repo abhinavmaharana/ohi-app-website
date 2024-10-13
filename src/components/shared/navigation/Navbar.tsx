@@ -1,10 +1,10 @@
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
-import LogoIcon from "@/assets/logo.png";
+import LogoIcon from "@/assets/logonew.png";
 import { Link } from "react-router-dom";
 // import PlatformDialog from "../platform-dialog/PlatformDialog";
 // import { Button } from "@/components/ui/button";
-import PlatformDialog from "../platform-dialog/PlatformDialog";
+// import PlatformDialog from "../platform-dialog/PlatformDialog";
 
 export default function Navbar() {
   const [state, setState] = useState(false);
@@ -18,32 +18,21 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="text-black w-full md:border-0 flex items-center justify-between p-4 relative">
+    <nav className="text-black bg-white rounded-full w-full md:border-0 flex items-center p-4 relative">
       {/* Logo */}
-      <div className="flex items-center">
-        <Link to="/"><img src={LogoIcon} alt="Logo" className="h-[54px] w-[91px]" /></Link>
-      </div>
-
-      {/* Menu Icon for Mobile */}
-      <div className="md:hidden z-50">
-        {state ? (
-          <X onClick={() => setState(!state)} className="h-8 w-8 cursor-pointer text-black" />
-        ) : (
-          <Menu onClick={() => setState(!state)} className="h-8 w-8 cursor-pointer" />
-        )}
-      </div>
-
-      {/* Nav Links */}
+      <div className="flex items-center space-x-24">
+        <Link to="/"><img src={LogoIcon} alt="Logo" className="h-[47px] w-[90px]" /></Link>
+        {/* Nav Links */}
       <div
         className={`fixed inset-0 z-40 flex flex-col items-center justify-center bg-white transition-transform transform ${
           state ? "translate-x-0" : "translate-x-full"
-        } md:static md:flex md:flex-row md:items-center md:justify-end md:translate-x-0 md:bg-transparent space-x-5`}
+        } md:static md:flex md:flex-row md:items-center md:justify-end md:translate-x-0 md:bg-transparent space-x-16`}
       >
         {menus.map((menu, index) => (
           <a
             key={index}
             href={menu.path}
-            className="block md:inline-block mt-2 md:mt-0 md:ml-6 text-[20px] hover:underline font-light"
+            className="block md:inline-block mt-2 md:mt-0 md:ml-6 text-[24px] hover:underline text-[#3BA0FF] poppins-medium"
             onClick={() => setState(false)} // Close the drawer when a link is clicked
           >
             {menu.title}
@@ -54,7 +43,17 @@ export default function Navbar() {
           Join O hi
         </Button>
        </a> */}
-       <PlatformDialog />
+       {/* <PlatformDialog /> */}
+      </div>
+      </div>
+
+      {/* Menu Icon for Mobile */}
+      <div className="md:hidden z-50 ml-36">
+        {state ? (
+          <X onClick={() => setState(!state)} className="h-8 w-8 cursor-pointer text-black" />
+        ) : (
+          <Menu onClick={() => setState(!state)} className="h-8 w-8 cursor-pointer" />
+        )}
       </div>
 
       {/* Overlay */}

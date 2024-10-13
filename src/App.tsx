@@ -5,16 +5,20 @@ import HomePage from "./pages/home";
 import PrivacyPage from "./pages/privacy-page";
 import TermsPage from "./pages/terms-page";
 import ScrollToTop from "./hook/ScrollToTop";
+import HomeAreaPage from "./pages/home-area";
 
 function App() {
   return (
     <Router>
       <ScrollToTop />
       <div>
-        <div className="px-[20px] pt-[10px] md:px-[50px] md:pt-[25px]">
-          <Navbar />
+        <div className="bg-[#3BA0FF]">
+          <div className="px-[36px] py-[32px]">
+            <Navbar />
+          </div>
           <Routes>
             <Route path="/" element={<HomePage />} />
+            <Route path="/new" element={<HomeAreaPage />} />
             <Route path="/privacy" element={<PrivacyPage />} />
             <Route path="/termcondition" element={<TermsPage />}/>
           </Routes>

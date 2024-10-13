@@ -1,15 +1,15 @@
-import LogoIcon from "@/assets/logo.png";
-import { SetStateAction, useState } from "react";
+import LogoIcon from "@/assets/logonew.png";
+// import { SetStateAction, useState } from "react";
 import { Link } from "react-router-dom";
 
 export default function Footer() {
-  const [question, setQuestion] = useState('');
+  // const [question, setQuestion] = useState('');
 
-  const handleQuestionChange = (e: { target: { value: SetStateAction<string>; }; }) => {
-    setQuestion(e.target.value);
-  };
+  // const handleQuestionChange = (e: { target: { value: SetStateAction<string>; }; }) => {
+  //   setQuestion(e.target.value);
+  // };
 
-  const mailtoLink = `mailto:contact@ohiapp.com?subject=Question&body=${encodeURIComponent(question)}`;
+  // const mailtoLink = `mailto:contact@ohiapp.com?subject=Question&body=${encodeURIComponent(question)}`;
 
   return (
     <div className="flex flex-col items-center p-20 bg-zinc-950 max-md:px-5">
@@ -37,7 +37,13 @@ export default function Footer() {
           </div>
         </div>
         <div className="hidden md:flex flex-col mt-1">
-          <div className="text-base font-medium leading-6 text-center text-white">
+          <div className="text-white">
+            {/* <h1>Get the App</h1> */}
+            <div>
+
+            </div>
+          </div>
+          {/* <div className="text-base font-medium leading-6 text-center text-white">
             Reachout for any Questions
           </div>
           <textarea
@@ -50,7 +56,7 @@ export default function Footer() {
             <div className="justify-center self-start px-4 py-2.5 mt-4 text-sm leading-7 text-center text-white rounded-2xl border border-white border-solid cursor-pointer">
               Contact Now
             </div>
-          </a>
+          </a> */}
         </div>
       </div>
       <div className="flex gap-5 justify-between mt-28 w-full max-w-[1248px] max-md:flex-wrap max-md:mt-10 max-md:max-w-full">
