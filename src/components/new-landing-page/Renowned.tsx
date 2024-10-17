@@ -17,7 +17,7 @@ export default function Renowned() {
                 </div>
                 <div className='flex flex-col lg:flex-row justify-between'>
                     <div className='px-[20px] lg:px-[50px]'>
-                        <ul className='lg:-space-y-4'>
+                        <ul className='grid grid-cols-1 lg:grid-cols-2 items-center lg:gap-4 lg:mt-[50px]'>
                             <li>
                                 <div className='flex items-center'>
                                     <img src={Badge1} className='w-[140px] h-[140px]' alt="" />
@@ -63,7 +63,7 @@ export default function Renowned() {
                             </li>
                         </ul>
                     </div>
-                    <div className=' lg:flex flex-col -mb-[10px]  lg:-mt-[50px]'>
+                    <div className=' lg:flex flex-col'>
                         {/* Image */}
                         <div>
                             <img src={HandImg}/>

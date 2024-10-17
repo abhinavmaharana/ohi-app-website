@@ -64,20 +64,15 @@ export default function ContentViral() {
     };
   return (
     <div className='background-content'>
-                <div className='flex flex-col lg:flex-row justify-between items-center px-[20px] lg:px-[80px] lg:py-[50px]'>
+                {/* <div className='flex flex-col lg:flex-row justify-between items-center px-[20px] lg:px-[80px] lg:py-[50px]'>
                     <div className='mt-[50px] lg:mt-[100px] space-y-4 lg:ml-0'>
                         <h1 className='text-[32px] lg:text-[52px] text-[#3BA0FF] leading-normal  poppins-bold lg:w-[455px]'>How about boosting your content through famous people and effective content ideas!?</h1>
                         <p className='text-[18px] lg:text-[24px] text-[#3BA0FF] poppins-medium lg:w-[490.29px]'>
                             Reach out to us at &apos;contact@ohiapp.com&apos; & share the link to your Instagram post.
                         </p>
-                    </div>
-                    <div className='mt-[100px]'>
-                        <img src={ContentViralImg} className=''/>
-                    </div>
-                </div>
-                <div className='mt-[50px]'>
+                        <div className='mt-[50px]'> */}
                     {/* Form */}
-                    <div className='px-[20px] lg:px-[80px]'>
+                    {/* <div className='px-[20px] lg:px-[80px]'>
                         <Form {...form}>
                             <form
                                 className="space-y-6"
@@ -131,6 +126,85 @@ export default function ContentViral() {
                                         )}
                                     />
                                 </div>
+                                <div className='flex items-center justify-center'>
+                                    <Button
+                                        type="button"
+                                        className="font-medium bg-[#3BA0FF] cursor-pointer rounded-full mb-[30px]"
+                                        onClick={handleContactClick}
+                                    >
+                                        Know More
+                                    </Button>
+                                </div>
+                            </form>
+                        </Form>
+                    </div>    */}
+                {/* </div>
+                    </div>
+                    <div className='mt-[100px]'>
+                        <img src={ContentViralImg} className=''/>
+                    </div>
+                </div> */}
+                <div className="flex flex-col lg:flex-row justify-between items-center px-[20px] lg:space-x-5 lg:px-[80px] lg:py-[50px]">
+                
+                    <div className="mt-[50px] lg:mt-[100px] space-y-4 lg:ml-0">
+                        <h1 className='text-[32px] lg:text-[52px] text-[#3BA0FF] leading-normal  poppins-bold'>How about boosting your content through famous people and effective content ideas!?</h1>
+                        <p className='text-[18px] lg:text-[24px] text-[#3BA0FF] poppins-medium'>
+                            Reach out to us at contact@ohiapp.com & share the link to your Instagram post.
+                        </p>
+                    <div>
+                        <Form {...form}>
+                            <form
+                                className="space-y-6"
+                                onSubmit={form.handleSubmit(onSubmit)}
+                            >
+                                <div>
+                                <FormField
+                                        control={form.control}
+                                        name="name"
+                                        render={({ field }) => (
+                                            <FormItem className="form-area-4">
+                                                <FormLabel className="text-[24px] text-[#3BA0FF] poppins-medium">
+                                                    <div className="flex">
+                                                        <h1>Name</h1>
+                                                        <Asterisk className="text-red-500 w-4 -mt-2"/>
+                                                    </div>
+                                                </FormLabel>
+                                                <FormControl>
+                                                    <Input
+                                                        className="cursor-pointer border-none bg-[#F4F4F4] outline-none"
+                                                        placeholder="Enter your name"
+                                                        {...field}
+                                                    />
+                                                </FormControl>
+                                                <FormMessage />
+                                            </FormItem>
+                                        )}
+                                    />
+                                </div>
+                                <div>
+                                <FormField
+                                        control={form.control}
+                                        name="instagramlink"
+                                        render={({ field }) => (
+                                            <FormItem className="form-area-4">
+                                                <FormLabel className="text-[24px] text-[#3BA0FF] poppins-medium">
+                                                    <div className="flex">
+                                                        <h1>Instagram Post Link</h1>
+                                                        <Asterisk className="text-red-500 w-4 -mt-2"/>
+                                                    </div>
+                                                </FormLabel>
+                                                <FormControl>
+                                                    <Input
+                                                        className="cursor-pointer border-none bg-[#F4F4F4] outline-none"
+                                                        placeholder="Enter Instagram Post Link"
+                                                        {...field}
+                                                    />
+                                                </FormControl>
+                                                <FormMessage />
+                                            </FormItem>
+                                        )}
+                                    />
+                                </div>
                                 {/* <div>
                                     <FormField
                                         control={form.control}
@@ -155,8 +229,8 @@ export default function ContentViral() {
                                         )}
                                     />
                                 </div> */}
-                                <div className='flex items-center justify-center'>
-                                    <Button
+                                <div>
+                                <Button
                                         type="button"
                                         className="font-medium bg-[#3BA0FF] cursor-pointer rounded-full mb-[30px]"
                                         onClick={handleContactClick}
@@ -166,7 +240,15 @@ export default function ContentViral() {
                                 </div>
                             </form>
                         </Form>
-                    </div>   
+                    </div>           
+                    </div>
+                    <div className="w-full image-area">
+                        <img
+                            src={ContentViralImg}
+                            alt="Hero Image"
+                            className="w-[500px] h-auto rounded-md"
+                        />
+                    </div>
                 </div>
             </div>
   )

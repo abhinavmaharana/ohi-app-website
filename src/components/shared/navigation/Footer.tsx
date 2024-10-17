@@ -67,7 +67,7 @@ export default function Footer() {
       </div>
       <div className="flex gap-5 justify-between mt-28 w-full max-w-[1248px] max-md:flex-wrap max-md:mt-10 max-md:max-w-full">
         <div className="text-base text-center text-zinc-400 max-md:max-w-full">
-          All Right Reserved.Copyright © 2022, All Rights Reserved.
+          All Right Reserved.Copyright © 2024, All Rights Reserved.
         </div>
         <div className="flex gap-4">
           <a href="https://twitter.com/SocialOhi">

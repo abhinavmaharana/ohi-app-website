@@ -247,6 +247,10 @@
   .navlink-area {
     margin-left: 140px !important;
   }
+
+  .image-area {
+    margin-left: 540px !important;
+  }
   .background-content{
     background-image: url('./assets/content1920.png');
     background-repeat: no-repeat;
