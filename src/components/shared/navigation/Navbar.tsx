@@ -18,10 +18,10 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="text-black bg-white rounded-full w-full md:border-0 flex items-center p-4 relative">
+    <nav className="text-black bg-white rounded-full w-full md:border-0 flex items-center p-3 relative">
       {/* Logo */}
       <div className="flex items-center space-x-24">
-        <Link to="/"><img src={LogoIcon} alt="Logo" className="h-[47px] w-[90px]" /></Link>
+        <Link to="/"><img src={LogoIcon} alt="Logo" className="h-[40px] w-[80px]" /></Link>
         {/* Nav Links */}
       <div
         className={`fixed inset-0 z-40 flex flex-col items-center justify-center bg-white transition-transform transform ${

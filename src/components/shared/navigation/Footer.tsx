@@ -1,6 +1,8 @@
 import LogoIcon from "@/assets/logonew.png";
 // import { SetStateAction, useState } from "react";
 import { Link } from "react-router-dom";
+import GooglePlayButton from '@/assets/Google Play.png'
+import AppStoreButton from '@/assets/App Store.png'
 
 export default function Footer() {
   // const [question, setQuestion] = useState('');
@@ -37,10 +39,14 @@ export default function Footer() {
           </div>
         </div>
         <div className="hidden md:flex flex-col mt-1">
-          <div className="text-white">
+          <div className="text-white flex flex-col gap-[7px] justify-between">
             {/* <h1>Get the App</h1> */}
-            <div>
-
+            <div className="font-medium text-white leading-[150%]">
+              Legal Stuff
+            </div>
+            <div className="flex items-center justify-between space-x-5 mt-3">
+              <img src={GooglePlayButton} />
+              <img src={AppStoreButton} />
             </div>
           </div>
           {/* <div className="text-base font-medium leading-6 text-center text-white">
