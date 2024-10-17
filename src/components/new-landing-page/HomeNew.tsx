@@ -8,7 +8,7 @@ export default function HomeNew() {
           <p className="items-center text-3xl  lg:text-5xl lg:w-[718px] text-white leading-normal lg:leading-normal  poppins-bold">
             Build your network, gain real-life fame, and go viral at every <span className="bg-[#EECA07] rounded-full px-12 shadow-xl">social hotspot</span>
           </p>
-          <p className="items-center text-white poppins-medium leading-normal">A social network with Authentic Connects, Fame, Stardom in <br/> Cafes, lounges, airports.</p>
+          <p className="items-center text-white poppins-medium leading-normal">A social network with Authentic Connects, Fame, Stardom in <br/> Cafes, Lounges, Airports.</p>
           <Button className="bg-white rounded-full text-[#3BA0FF] poppins-bold lg:w-[206.28px]">JOIN O HI</Button>
         </div>
         {/* <div className="mt-[20px] lg:-mb-[350px]">

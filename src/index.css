@@ -237,3 +237,23 @@
     background-repeat: no-repeat;
   }
 }
+
+@media (min-width: 1920px) and (min-height: 860px) {
+  .background-renowned {
+    background-image: url('./assets/1920.png');
+    background-repeat: no-repeat;
+  }
+
+  .navlink-area {
+    margin-left: 140px !important;
+  }
+  .background-content{
+    background-image: url('./assets/content1920.png');
+    background-repeat: no-repeat;
+    margin-top: 100px !important;
+  }
+  .background-money {
+    background-image: url('./assets/money1920.png');
+    background-repeat: no-repeat;
+  }
+}

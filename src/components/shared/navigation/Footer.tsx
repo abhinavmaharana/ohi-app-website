@@ -1,4 +1,4 @@
-import LogoIcon from "@/assets/logonew.png";
+import LogoIcon from "@/assets/logonew1.png";
 // import { SetStateAction, useState } from "react";
 import { Link } from "react-router-dom";
 import GooglePlayButton from '@/assets/Google Play.png'
@@ -19,7 +19,7 @@ export default function Footer() {
         <img
           loading="lazy"
           src={LogoIcon}
-          className="shrink-0 aspect-[1.69] w-[91px]"
+          className="w-[91px]"
         />
         <div className="flex gap-[57px] justify-between self-stretch text-base text-start text-zinc-400 lg:-ml-[250px]">
           <div className="flex flex-col">
@@ -31,7 +31,7 @@ export default function Footer() {
           </div>
           <div className="flex flex-col self-start">
             <div className="font-medium text-white leading-[150%]">
-              Legal Stuff
+              Useful Links
             </div>
             <div className="mt-4"><Link to="/termcondition">Terms & Condition</Link></div>
             <div className="mt-4"><Link to="/privacy">Privacy Policy</Link></div>
@@ -42,7 +42,7 @@ export default function Footer() {
           <div className="text-white flex flex-col gap-[7px] justify-between">
             {/* <h1>Get the App</h1> */}
             <div className="font-medium text-white leading-[150%]">
-              Legal Stuff
+              Get the App
             </div>
             <div className="flex items-center justify-between space-x-5 mt-3">
               <img src={GooglePlayButton} />

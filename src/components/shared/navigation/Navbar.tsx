@@ -1,6 +1,6 @@
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
-import LogoIcon from "@/assets/logonew.png";
+import LogoIcon from "@/assets/logonew1.png";
 import { Link } from "react-router-dom";
 // import PlatformDialog from "../platform-dialog/PlatformDialog";
 // import { Button } from "@/components/ui/button";
@@ -32,7 +32,7 @@ export default function Navbar() {
           <a
             key={index}
             href={menu.path}
-            className="block md:inline-block mt-2 md:mt-0 md:ml-6 text-[24px] hover:underline text-[#3BA0FF] poppins-medium"
+            className="block md:inline-block mt-2 md:mt-0 md:ml-6 navlink-area  text-[24px] hover:underline text-[#3BA0FF] poppins-medium"
             onClick={() => setState(false)} // Close the drawer when a link is clicked
           >
             {menu.title}

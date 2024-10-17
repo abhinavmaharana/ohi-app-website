@@ -1,55 +1,69 @@
-import { BadgeIcon } from 'lucide-react'
 import HandImg from '@/assets/hand1.png'
+import Badge1 from '@/assets/badge1.png'
+import Badge2 from '@/assets/badge2.png'
+import Badge3 from '@/assets/badge3.png'
+import Badge4 from '@/assets/badge4.png'
+import Badge5 from '@/assets/badge5.png'
+import Badge6 from '@/assets/badge6.png'
+import Badge7 from '@/assets/badge7.png'
+
 
 export default function Renowned() {
   return (
     <div className='background-renowned'>
                 <div className='mt-[50px] lg:mt-0'>
                 <div className="px-[20px] lg:px-[50px] text-center pt-[20px] lg:pt-[30px]">
-                    <h1 className="items-center text-[32px]  lg:text-[48px] text-[#3BA0FF]  lg:mt-[250px] lg:mb-[20px] leading-normal  poppins-bold">Renowned Celebrities we've partnered with</h1>
+                    <h1 className="items-center text-[32px]  lg:text-[48px] text-[#3BA0FF]  lg:mt-[250px] lg:mb-[20px] leading-normal  poppins-bold">Saga of FAME: Where the networks meet your influence.</h1>
                 </div>
                 <div className='flex flex-col lg:flex-row justify-between'>
-                    <div className='px-[20px] lg:px-[80px]'>
-                        <ul className=''>
+                    <div className='px-[20px] lg:px-[50px]'>
+                        <ul className='lg:-space-y-4'>
                             <li>
-                                <div className='flex items-center space-x-4'>
-                                    <BadgeIcon fill="#EECA07" strokeWidth={0} className='w-[120px] h-[120px]'/>
-                                    <h1 className='lg:text-[20px] text-[#3BA0FF] poppins-medium'>Lorem ipsum dolor sit amet,<br/> consectetur adipiscing</h1>
+                                <div className='flex items-center'>
+                                    <img src={Badge1} className='w-[140px] h-[140px]' alt="" />
+                                    {/* <BadgeIcon fill="#EECA07" strokeWidth={0} className='w-[120px] h-[120px]'/> */}
+                                    <h1 className='lg:text-[20px] text-[#3BA0FF] poppins-medium'>Globe Trotter: People who check in the most </h1>
                                 </div>
                             </li>
                             <li>
                                 <div className='flex items-center space-x-4'>
-                                    <BadgeIcon fill="#FF8800" strokeWidth={0} className='w-[120px] h-[120px]'/>
-                                    <h1 className='lg:text-[20px] text-[#3BA0FF] poppins-medium'>Lorem ipsum dolor sit amet,<br/> consectetur adipiscing</h1>
+                                <img src={Badge2} className='w-[140px] h-[140px]' alt="" />
+                                    <h1 className='lg:text-[20px] text-[#3BA0FF] poppins-medium'>Cafe star: Most cafe check ins</h1>
                                 </div>
                             </li>
                             <li>
                                 <div className='flex items-center space-x-4'>
-                                    <BadgeIcon fill="#3BA0FF" strokeWidth={0} className='w-[120px] h-[120px]'/>
-                                    <h1 className='lg:text-[20px] text-[#3BA0FF] poppins-medium'>Lorem ipsum dolor sit amet,<br/> consectetur adipiscing</h1>
+                                <img src={Badge3} className='w-[140px] h-[140px]' alt="" />
+                                    <h1 className='lg:text-[20px] text-[#3BA0FF] poppins-medium'>VIP: Given to celebrities</h1>
                                 </div>
                             </li>
                             <li>
                                 <div className='flex items-center space-x-4'>
-                                    <BadgeIcon fill="#EECA07" strokeWidth={0} className='w-[120px] h-[120px]'/>
-                                    <h1 className='lg:text-[20px] text-[#3BA0FF] poppins-medium'>Lorem ipsum dolor sit amet,<br/> consectetur adipiscing</h1>
+                                <img src={Badge4} className='w-[140px] h-[140px]' alt="" />
+                                    <h1 className='lg:text-[20px] text-[#3BA0FF] poppins-medium'>Real life hero(army)</h1>
                                 </div>
                             </li>
                             <li>
                                 <div className='flex items-center space-x-4'>
-                                    <BadgeIcon fill="#FF8800" strokeWidth={0} className='w-[120px] h-[120px]'/>
-                                    <h1 className='lg:text-[20px] text-[#3BA0FF] poppins-medium'>Lorem ipsum dolor sit amet,<br/> consectetur adipiscing</h1>
+                                <img src={Badge5} className='w-[140px] h-[140px]' alt="" />
+                                    <h1 className='lg:text-[20px] text-[#3BA0FF] poppins-medium'>Real life hero (dr.)</h1>
                                 </div>
                             </li>
                             <li>
                                 <div className='flex items-center space-x-4'>
-                                    <BadgeIcon fill="#3BA0FF" strokeWidth={0} className='w-[120px] h-[120px]'/>
-                                    <h1 className='lg:text-[20px] text-[#3BA0FF] poppins-medium'>Lorem ipsum dolor sit amet,<br/> consectetur adipiscing</h1>
+                                <img src={Badge6} className='w-[140px] h-[140px]' alt="" />
+                                    <h1 className='lg:text-[20px] text-[#3BA0FF] poppins-medium'>Luxury guru: Luxury cafe check ins</h1>
+                                </div>
+                            </li>
+                            <li>
+                                <div className='flex items-center space-x-4'>
+                                <img src={Badge7} className='w-[140px] h-[140px]' alt="" />
+                                    <h1 className='lg:text-[20px] text-[#3BA0FF] poppins-medium'>Influencer: for lifestyle influencers</h1>
                                 </div>
                             </li>
                         </ul>
                     </div>
-                    <div className=' lg:flex flex-col -mb-[20px]  lg:-mt-[50px]'>
+                    <div className=' lg:flex flex-col -mb-[10px]  lg:-mt-[50px]'>
                         {/* Image */}
                         <div>
                             <img src={HandImg}/>
