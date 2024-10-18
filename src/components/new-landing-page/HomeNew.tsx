@@ -9,7 +9,7 @@ export default function HomeNew() {
 
     const [currentVideo, setCurrentVideo] = useState(0);
     const [isSliding, setIsSliding] = useState(false); // Track sliding animation
-    const videoRefs = useRef(videos.map(() => null)); // Create refs for videos
+    const videoRefs = useRef<(HTMLVideoElement | null)[]>([]); // Define type for video refs
 
     const handleVideoEnd = () => {
         setIsSliding(true); // Start sliding animation
@@ -18,23 +18,26 @@ export default function HomeNew() {
             setCurrentVideo(nextVideo); // Switch to next video
             setIsSliding(false); // Reset sliding animation
 
-            // Play the next video
-            if (videoRefs.current[nextVideo]) {
-                videoRefs.current[nextVideo].play();
+            // Play the next video if it's not null
+            const nextVideoElement = videoRefs.current[nextVideo];
+            if (nextVideoElement) {
+                nextVideoElement.play();
             }
         }, 500); // Adjust the duration to match the sliding animation
     };
 
     useEffect(() => {
         // Play the current video when it becomes the main video
-        if (videoRefs.current[currentVideo]) {
-            videoRefs.current[currentVideo].play();
+        const currentVideoElement = videoRefs.current[currentVideo];
+        if (currentVideoElement) {
+            currentVideoElement.play();
         }
 
         // Ensure the next video is paused
         const nextVideo = (currentVideo + 1) % videos.length;
-        if (videoRefs.current[nextVideo]) {
-            videoRefs.current[nextVideo].pause();
+        const nextVideoElement = videoRefs.current[nextVideo];
+        if (nextVideoElement) {
+            nextVideoElement.pause();
         }
     }, [currentVideo]);
 
