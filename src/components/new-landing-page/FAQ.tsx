@@ -5,6 +5,7 @@ import {
   } from "@/components/ui/accordion"
 import { X } from "lucide-react";
 import { useState } from "react";
+import Marquee from "react-fast-marquee";
 
 // Define the props for the Modal component
 interface ModalProps {
@@ -54,19 +55,51 @@ export default function FAQ() {
         title={modalTitle}
         description={modalDescription}
       />
+        {/* <div className="bg-[#EECA07] text-[#3BA0FF] text-[48px] flex items-center justify-evenly poppins-bold">
+            <p>FAQ</p>
+            <p>FAQ</p>
+            <p>FAQ</p>
+            <p className="hidden lg:block">FAQ</p>
+            <p className="hidden lg:block">FAQ</p>
+            <p className="hidden lg:block">FAQ</p>
+            <p className="hidden lg:block">FAQ</p>
+            <p className="hidden lg:block">FAQ</p>
+            <p className="hidden lg:block">FAQ</p>
+            <p className="hidden lg:block">FAQ</p>
+            <p className="hidden lg:block">FAQ</p>
+        </div> */}
+
         <div className="bg-[#EECA07] text-[#3BA0FF] text-[48px] flex items-center justify-evenly poppins-bold">
-            <p>FAQ</p>
-            <p>FAQ</p>
-            <p>FAQ</p>
-            <p className="hidden lg:block">FAQ</p>
-            <p className="hidden lg:block">FAQ</p>
-            <p className="hidden lg:block">FAQ</p>
-            <p className="hidden lg:block">FAQ</p>
-            <p className="hidden lg:block">FAQ</p>
-            <p className="hidden lg:block">FAQ</p>
-            <p className="hidden lg:block">FAQ</p>
-            <p className="hidden lg:block">FAQ</p>
+        <Marquee speed={100} direction="right">
+          <div className="mr-12 flex items-center space-x-12">
+            {["FAQ", "FAQ", "FAQ"].map((x) => {
+              return (
+                <div key={`1${x}`} className="flex items-center space-x-10">
+                  
+                  <div className="text-[2rem] lg:text-[4rem]">{x}</div>
+                </div>
+              );
+            })}
+            {["FAQ", "FAQ", "FAQ"].map((x) => {
+              return (
+                <div key={`2${x}`} className="flex items-center space-x-10">
+                 
+                  <div className="text-[2rem] lg:text-[4rem]">{x}</div>
+                </div>
+              );
+            })}
+            {["FAQ", "FAQ", "FAQ"].map((x) => {
+              return (
+                <div key={`3${x}`} className="flex items-center space-x-10">
+                  
+                  <div className="text-[2rem] lg:text-[4rem]">{x}</div>
+                </div>
+              );
+            })}
+          </div>
+        </Marquee>
         </div>
+        
         <div className="px-[20px] lg:px-[50px]">
             <div className="flex flex-col lg:flex-row justify-between">
                 <div>
