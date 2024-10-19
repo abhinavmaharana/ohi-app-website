@@ -62,6 +62,15 @@ export default function ContentViral() {
         
         window.location.href = `mailto:contact@ohiapp.com?subject=${subject}&body=${body}`;
     };
+
+    const handleClick = () => {
+        const subject = encodeURIComponent("Contact Request: Viral Content");
+        const body = encodeURIComponent(
+          `Hello Team,\n\nMy name is`
+        );
+    
+        window.location.href = `mailto:contact@ohiapp.com?subject=${subject}&body=${body}`;
+      };
   return (
     <div className='background-content'>
                 {/* <div className='flex flex-col lg:flex-row justify-between items-center px-[20px] lg:px-[80px] lg:py-[50px]'>
@@ -150,7 +159,7 @@ export default function ContentViral() {
                        <div>
                        <h1 className='text-[32px] lg:text-[52px] text-[#3BA0FF] leading-normal  poppins-bold'>Looking to boost your brand's presence?</h1>
                         <p className='text-[18px] lg:text-[24px] text-[#3BA0FF] poppins-medium'>
-                        We're here to help! Share your Instagram post link with us at contact@ohiapp.com and let us help you take your brand to new heights.
+                        We're here to help! Share your Instagram post link with us at  <span className="bg-[#EECA07] text-white rounded-full px-3 shadow-xl" onClick={handleClick}>contact@ohiapp.com</span> and let us help you take your brand to new heights.
                         </p>
                        </div>
                         <div>

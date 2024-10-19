@@ -63,7 +63,7 @@ export default function HomeNew() {
     }, [currentVideo]);
 
     return (
-        <div className="flex flex-col lg:flex-row justify-center items-center space-y-6 lg:space-y-0 lg:space-x-12 lg:py-12">
+        <div className="flex flex-col lg:flex-row justify-center items-center space-y-6 lg:space-y-0 lg:space-x-12 lg:py-12 lg:-mb-[50px]">
             {/* Text Section */}
             <div className="px-[20px] lg:px-[50px] text-center lg:text-left mt-[20px] space-y-6 lg:w-[900px]">
                 <p className="text-3xl lg:text-5xl text-white leading-normal lg:leading-normal poppins-bold">
@@ -78,11 +78,11 @@ export default function HomeNew() {
             </div>
 
             {/* Video Carousel Section */}
-            <div className="relative w-full lg:w-1/2 h-[503px] flex justify-center items-center overflow-hidden lg:pr-36">
+            <div className="relative w-full lg:w-1/2 h-[503px] flex justify-center items-center overflow-hidden lg:pr-56">
                 {/* Previous Button */}
                 <button
                     onClick={handlePrev}
-                    className="absolute left-10 z-30 p-4 bg-white text-[#3BA0FF] rounded-full shadow-lg"
+                    className="absolute left-0 z-30 p-4 bg-white text-[#3BA0FF] rounded-full shadow-lg"
                 >
                     &#8249; {/* Left arrow symbol */}
                 </button>
@@ -109,7 +109,7 @@ export default function HomeNew() {
                     className={`absolute w-[304px] h-[503px] rounded-[8px] transition-transform duration-500 z-10 opacity-60 ${
                         isSliding ? "translate-x-0" : "translate-x-full"
                     }`}
-                    style={{ transform: 'translateX(50%)' }} // Positioning next video slightly visible
+                    style={{ transform: 'translateX(80%)' }} // Positioning next video slightly visible
                 >
                     <video
                         ref={(el) => (videoRefs.current[(currentVideo + 1) % videos.length] = el)} // Assign ref to next video
@@ -123,7 +123,7 @@ export default function HomeNew() {
                 {/* Next Button */}
                 <button
                     onClick={handleNext}
-                    className="absolute right-12 z-30 p-3 bg-white text-[#3BA0FF] rounded-full shadow-lg"
+                    className="absolute right-5 z-30 p-3 bg-white text-[#3BA0FF] rounded-full shadow-lg"
                 >
                     &#8250; {/* Right arrow symbol */}
                 </button>

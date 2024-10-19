@@ -13,7 +13,7 @@ function App() {
       <ScrollToTop />
       <div>
         <div className="bg-[#3BA0FF]">
-          <div className="px-[36px] py-[32px]">
+          <div className=" px-[56px] py-[32px]">      
             <Navbar />
           </div>
           <Routes>

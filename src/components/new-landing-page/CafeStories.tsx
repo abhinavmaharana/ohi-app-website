@@ -1,4 +1,4 @@
-import MobileImg from '@/assets/Ohi.gif'
+import MobileImg from '@/assets/Frame1.png'
 
 export default function CafeStories() {
   return (
@@ -13,7 +13,7 @@ export default function CafeStories() {
                     <p className="text-[18px] lg:text-[24px] text-white poppins-medium ">Flash your wins, flex those epic moments, and get in front of the right people because it's all about networking</p>
                 </div>
             </div>
-            <div>
+            <div className=''>
                 <img src={MobileImg} className='h-[612.9px]'/>
             </div>
         </div>

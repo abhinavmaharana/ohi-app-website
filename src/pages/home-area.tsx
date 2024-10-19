@@ -10,7 +10,9 @@ export default function HomeAreaPage() {
   return (
     <div>
         <div>
-            <HomeNew />
+            <div className=''>
+              <HomeNew />
+            </div>
             <div className=''>
             <Renowned />
             </div>

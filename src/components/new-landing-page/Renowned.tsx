@@ -40,25 +40,25 @@ export default function Renowned() {
                             <li>
                                 <div className='flex items-center space-x-4'>
                                 <img src={Badge4} className='w-[140px] h-[140px]' alt="" />
-                                    <h1 className='lg:text-[20px] text-[#3BA0FF] poppins-medium'>Real life hero(army)</h1>
+                                    <h1 className='lg:text-[20px] text-[#3BA0FF] poppins-medium'>Real life hero(Army)</h1>
                                 </div>
                             </li>
                             <li>
                                 <div className='flex items-center space-x-4'>
                                 <img src={Badge5} className='w-[140px] h-[140px]' alt="" />
-                                    <h1 className='lg:text-[20px] text-[#3BA0FF] poppins-medium'>Real life hero (dr.)</h1>
+                                    <h1 className='lg:text-[20px] text-[#3BA0FF] poppins-medium'>Real life hero (Dr.)</h1>
                                 </div>
                             </li>
                             <li>
                                 <div className='flex items-center space-x-4'>
                                 <img src={Badge6} className='w-[140px] h-[140px]' alt="" />
-                                    <h1 className='lg:text-[20px] text-[#3BA0FF] poppins-medium'>Luxury guru: Luxury cafe check ins</h1>
+                                    <h1 className='lg:text-[20px] text-[#3BA0FF] poppins-medium'>Luxury Guru: Luxury cafe check ins</h1>
                                 </div>
                             </li>
                             <li>
                                 <div className='flex items-center space-x-4'>
                                 <img src={Badge7} className='w-[140px] h-[140px]' alt="" />
-                                    <h1 className='lg:text-[20px] text-[#3BA0FF] poppins-medium'>Influencer: for lifestyle influencers</h1>
+                                    <h1 className='lg:text-[20px] text-[#3BA0FF] poppins-medium'>Influencer: For lifestyle influencers</h1>
                                 </div>
                             </li>
                         </ul>
@@ -68,8 +68,8 @@ export default function Renowned() {
                         <div>
                             <img src={HandImg} className='lg:h-[500px] lg:ml-56'/>
                         </div>
-                        <div className='lg:w-[634px] ml-[34px]  rounded-l-[29.87px] bg-[#EECA07] text-white'>
-                            <p className='lg:text-[24px] pl-6 pr-20 py-6 poppins-medium'>
+                        <div className='lg:w-[634px] ml-[34px] lg:mb-[50px]  rounded-l-[29.87px] bg-[#EECA07] text-white'>
+                            <p className='lg:text-[20px] pl-6 pr-20 py-6 poppins-medium'>
                             Make your presence count at every 'Social Hotspot' you visit. Let the people get notified about your Influential Presence at every Café/Airport you visit with the 'Real Life Fame Tick'!
                             </p>
                         </div>
