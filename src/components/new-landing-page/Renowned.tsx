@@ -10,7 +10,7 @@ import Badge7 from '@/assets/badge7.png'
 
 export default function Renowned() {
   return (
-    <div className='background-renowned'>
+    <div id="" className='background-renowned'>
                 <div className='mt-[50px] lg:mt-0'>
                 <div className="px-[20px] lg:px-[50px] text-center pt-[20px] lg:pt-[30px]">
                     <h1 className="items-center text-[32px]  lg:text-[48px] text-[#3BA0FF]  lg:mt-[250px] lg:mb-[20px] leading-normal  poppins-bold">Saga of FAME: Where the networks meet your influence.</h1>

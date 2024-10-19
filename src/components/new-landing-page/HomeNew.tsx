@@ -1,5 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { Button } from "@/components/ui/button";
+import GooglePlayButton from '@/assets/Google Play.png'
+import AppStoreButton from '@/assets/App Store.png'
 
 export default function HomeNew() {
     const videos = [
@@ -12,6 +14,12 @@ export default function HomeNew() {
     const [currentVideo, setCurrentVideo] = useState(0);
     const [isSliding, setIsSliding] = useState(false); // Track sliding animation
     const videoRefs = useRef<(HTMLVideoElement | null)[]>([]); // Define type for video refs
+
+    const [showPopup, setShowPopup] = useState(false);
+
+    const handlePopup = () => {
+      setShowPopup(!showPopup);
+    };
 
     const handleVideoEnd = () => {
         handleNext(); // Move to the next video when the current one ends
@@ -63,7 +71,7 @@ export default function HomeNew() {
     }, [currentVideo]);
 
     return (
-        <div className="flex flex-col lg:flex-row justify-center items-center space-y-6 lg:space-y-0 lg:space-x-12 lg:py-12 lg:-mb-[50px]">
+        <div id="about-new" className="flex flex-col lg:flex-row justify-center items-center space-y-6 lg:space-y-0 lg:space-x-12 lg:py-12 lg:-mb-[50px]">
             {/* Text Section */}
             <div className="px-[20px] lg:px-[50px] text-center lg:text-left mt-[20px] space-y-6 lg:w-[900px]">
                 <p className="text-3xl lg:text-5xl text-white leading-normal lg:leading-normal poppins-bold">
@@ -74,7 +82,7 @@ export default function HomeNew() {
                     A social network with Authentic Connects, Fame, Stardom in <br />
                     Cafes, Lounges, Airports.
                 </p>
-                <Button className="bg-white rounded-full text-[#3BA0FF] poppins-bold lg:w-[206.28px]">JOIN O HI</Button>
+                <Button className="bg-white rounded-full text-[#3BA0FF] poppins-bold lg:w-[206.28px]" onClick={handlePopup}>JOIN O HI</Button>
             </div>
 
             {/* Video Carousel Section */}
@@ -128,6 +136,21 @@ export default function HomeNew() {
                     &#8250; {/* Right arrow symbol */}
                 </button>
             </div>
+
+            {showPopup && (
+        <div className="fixed inset-0 flex items-center justify-center z-50">
+          <div className="bg-white p-6 rounded-lg max-w-lg text-center">
+            <p className="mb-6 poppins-medium">Download the app to know more</p>
+            <div className="flex items-center justify-between space-x-5 mt-3 mb-5">
+              <img src={GooglePlayButton} />
+              <img src={AppStoreButton} />
+            </div>
+            <Button className="bg-[#3BA0FF] rounded-full text-white" onClick={handlePopup}>
+              Close
+            </Button>
+          </div>
+        </div>
+      )}
         </div>
     );
 }

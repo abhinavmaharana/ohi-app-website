@@ -8,11 +8,11 @@ export default function Navbar() {
   const [isScrolled, setScrolled] = useState(false);
 
   const menus = [
-    { title: "About us", path: "/#about" },
-    { title: "At Cafe", path: "/#atcafe" },
-    { title: "Get Famous", path: "/#earn" },
-    { title: "Earn Money", path: "/#make" },
-    { title: "Make Content Viral", path: "/#content" },
+    { title: "About us", path: "/new/#about-new" },
+    { title: "At Cafe", path: "/new/#atcafe-new" },
+    { title: "Get Famous", path: "/new/#earn-new" },
+    { title: "Earn Money", path: "/new/#make-new" },
+    { title: "Make Content Viral", path: "/new/#content-new" },
   ];
 
   // Handle scroll effect

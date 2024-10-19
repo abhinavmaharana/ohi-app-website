@@ -72,7 +72,7 @@ export default function ContentViral() {
         window.location.href = `mailto:contact@ohiapp.com?subject=${subject}&body=${body}`;
       };
   return (
-    <div className='background-content'>
+    <div id="content-new" className='background-content'>
                 {/* <div className='flex flex-col lg:flex-row justify-between items-center px-[20px] lg:px-[80px] lg:py-[50px]'>
                     <div className='mt-[50px] lg:mt-[100px] space-y-4 lg:ml-0'>
                         <h1 className='text-[32px] lg:text-[52px] text-[#3BA0FF] leading-normal  poppins-bold lg:w-[455px]'>How about boosting your content through famous people and effective content ideas!?</h1>

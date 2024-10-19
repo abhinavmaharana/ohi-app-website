@@ -2,7 +2,7 @@ import MobileImg from '@/assets/Frame1.png'
 
 export default function CafeStories() {
   return (
-    <div className='mt-[50px] px-[20px] lg:px-[50px]'>
+    <div id="atcafe-new" className='mt-[50px] px-[20px] lg:px-[50px]'>
         <div className='flex flex-col lg:flex-row justify-between items-center'>
             <div className="space-y-20">
                 <div className="-rotate-[8deg]">
