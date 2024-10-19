@@ -14,9 +14,28 @@ export default function HomeNew() {
     const videoRefs = useRef<(HTMLVideoElement | null)[]>([]); // Define type for video refs
 
     const handleVideoEnd = () => {
+        handleNext(); // Move to the next video when the current one ends
+    };
+
+    const handlePrev = () => {
         setIsSliding(true); // Start sliding animation
         setTimeout(() => {
-            const nextVideo = (currentVideo + 1) % videos.length;
+            const prevVideo = (currentVideo - 1 + videos.length) % videos.length; // Get previous video
+            setCurrentVideo(prevVideo); // Switch to previous video
+            setIsSliding(false); // Reset sliding animation
+
+            // Play the previous video if it's not null
+            const prevVideoElement = videoRefs.current[prevVideo];
+            if (prevVideoElement) {
+                prevVideoElement.play();
+            }
+        }, 500); // Adjust duration for sliding animation
+    };
+
+    const handleNext = () => {
+        setIsSliding(true); // Start sliding animation
+        setTimeout(() => {
+            const nextVideo = (currentVideo + 1) % videos.length; // Get next video
             setCurrentVideo(nextVideo); // Switch to next video
             setIsSliding(false); // Reset sliding animation
 
@@ -25,7 +44,7 @@ export default function HomeNew() {
             if (nextVideoElement) {
                 nextVideoElement.play();
             }
-        }, 500); // Adjust the duration to match the sliding animation
+        }, 500); // Adjust duration for sliding animation
     };
 
     useEffect(() => {
@@ -59,7 +78,15 @@ export default function HomeNew() {
             </div>
 
             {/* Video Carousel Section */}
-            <div className="relative w-full lg:w-1/2 h-[503px] flex justify-center items-center overflow-hidden lg:pr-8">
+            <div className="relative w-full lg:w-1/2 h-[503px] flex justify-center items-center overflow-hidden lg:pr-36">
+                {/* Previous Button */}
+                <button
+                    onClick={handlePrev}
+                    className="absolute left-10 z-30 p-4 bg-white text-[#3BA0FF] rounded-full shadow-lg"
+                >
+                    &#8249; {/* Left arrow symbol */}
+                </button>
+
                 {/* Current Video */}
                 <div
                     className={`absolute w-[304px] h-[503px] rounded-[8px] transition-transform duration-500 z-20 ${
@@ -71,7 +98,7 @@ export default function HomeNew() {
                         key={videos[currentVideo]} // Re-render when currentVideo changes
                         src={videos[currentVideo]}
                         autoPlay
-                        muted
+                        controls
                         onEnded={handleVideoEnd} // Trigger when video ends
                         className="w-full h-full rounded-[8px] object-cover"
                     />
@@ -88,10 +115,18 @@ export default function HomeNew() {
                         ref={(el) => (videoRefs.current[(currentVideo + 1) % videos.length] = el)} // Assign ref to next video
                         key={videos[(currentVideo + 1) % videos.length]} // Re-render when currentVideo changes
                         src={videos[(currentVideo + 1) % videos.length]}
-                        muted
+                        controls
                         className="w-full h-full rounded-[8px] object-cover"
                     />
                 </div>
+
+                {/* Next Button */}
+                <button
+                    onClick={handleNext}
+                    className="absolute right-12 z-30 p-3 bg-white text-[#3BA0FF] rounded-full shadow-lg"
+                >
+                    &#8250; {/* Right arrow symbol */}
+                </button>
             </div>
         </div>
     );

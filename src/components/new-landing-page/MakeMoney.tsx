@@ -1,4 +1,4 @@
-import MobileImg from '@/assets/mobile2.png'
+import MobileImg from '@/assets/makemoney.png'
 import { Button } from '../ui/button'
 import { useState } from 'react';
 import GooglePlayButton from '@/assets/Google Play.png'
