@@ -66,7 +66,7 @@ export default function Renowned() {
                     <div className=' lg:flex flex-col'>
                         {/* Image */}
                         <div>
-                            <img src={HandImg}/>
+                            <img src={HandImg} className='lg:h-[500px] lg:ml-56'/>
                         </div>
                         <div className='lg:w-[634px] ml-[34px]  rounded-l-[29.87px] bg-[#EECA07] text-white'>
                             <p className='lg:text-[24px] pl-6 pr-20 py-6 poppins-medium'>
