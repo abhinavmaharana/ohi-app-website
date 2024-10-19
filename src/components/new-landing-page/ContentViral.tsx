@@ -144,15 +144,17 @@ export default function ContentViral() {
                         <img src={ContentViralImg} className=''/>
                     </div>
                 </div> */}
-                <div className="flex flex-col lg:flex-row justify-between items-center px-[20px] lg:space-x-5 lg:px-[80px] lg:py-[50px]">
+                <div className="flex flex-col lg:flex-row justify-between items-center px-[20px] lg:space-x-32 lg:px-[80px] lg:py-[50px]">
                 
                     <div className="mt-[50px] lg:mt-[100px] space-y-4 lg:ml-0">
-                        <h1 className='text-[32px] lg:text-[52px] text-[#3BA0FF] leading-normal  poppins-bold'>How about boosting your content through famous people and effective content ideas!?</h1>
+                       <div>
+                       <h1 className='text-[32px] lg:text-[52px] text-[#3BA0FF] leading-normal  poppins-bold'>Looking to boost your brand's presence?</h1>
                         <p className='text-[18px] lg:text-[24px] text-[#3BA0FF] poppins-medium'>
-                            Reach out to us at contact@ohiapp.com & share the link to your Instagram post.
+                        We're here to help! Share your Instagram post link with us at contact@ohiapp.com and let us help you take your brand to new heights.
                         </p>
-                    <div>
-                        <Form {...form}>
+                       </div>
+                        <div>
+                            <Form {...form}>
                             <form
                                 className="space-y-6"
                                 onSubmit={form.handleSubmit(onSubmit)}
@@ -239,8 +241,8 @@ export default function ContentViral() {
                                     </Button>
                                 </div>
                             </form>
-                        </Form>
-                    </div>           
+                            </Form>
+                        </div>           
                     </div>
                     <div className="w-full image-area">
                         <img

@@ -21,8 +21,7 @@ export default function MakeMoney() {
                     <span className="bg-[#EECA07] rounded-full px-12 shadow-xl text-[32px] lg:text-[52px]  text-white poppins-bold">Make Money</span>
                 </div>
                 <div className='lg:w-[880px] space-y-4'>
-                    <h1 className="lg:text-[52px] text-[#3BA0FF] poppins-bold">Daily coffee doses can fuel passive income, boost networking make every 
-                        second count!
+                    <h1 className="lg:text-[52px] text-[#3BA0FF] poppins-bold">Earn effortlessly by sharing content with your friends on Instagram! Simply reshare and start making money in no time
                     </h1>
                     <Button className="bg-[#3BA0FF] rounded-full text-white poppins-bold lg:w-[279px] lg:h-[64px]" onClick={handlePopup}>Learn More</Button>
                 </div>
