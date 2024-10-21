@@ -7,8 +7,7 @@ export default function HomeNew() {
     const videos = [
         "/videos/cafe.mp4",
         "/videos/ready.mp4",
-        "/videos/cafe.mp4",
-        "/videos/ready.mp4",
+        "/videos/IMG_1383.mp4",
     ];
 
     const [currentVideo, setCurrentVideo] = useState(0);
@@ -73,8 +72,8 @@ export default function HomeNew() {
     return (
         <div id="about-new" className="flex flex-col lg:flex-row justify-center items-center space-y-6 lg:space-y-0 lg:space-x-12 lg:py-12 lg:-mb-[50px]">
             {/* Text Section */}
-            <div className="px-[20px] lg:px-[50px] text-center lg:text-left mt-[20px] space-y-6 lg:w-[900px]">
-                <p className="text-3xl lg:text-5xl text-white leading-normal lg:leading-normal poppins-bold">
+            <div className="px-[20px] lg:px-[50px] text-center lg:text-left mt-[20px] space-y-6">
+                <p className="text-3xl lg:text-5xl text-white leading-normal lg:leading-normal poppins-bold lg:w-[700px]">
                     Build your network, gain real-life fame, and go viral at every{" "}
                     <span className="bg-[#EECA07] rounded-full px-12 shadow-xl">social hotspot</span>
                 </p>
