@@ -7,7 +7,7 @@ export default function HomeNew() {
     const videos = [
         "/videos/cafe.mp4",
         "/videos/ready.mp4",
-        "/videos/IMG_1383.mp4",
+        "/videos/video.mp4",
     ];
 
     const [currentVideo, setCurrentVideo] = useState(0);
