@@ -17,7 +17,7 @@ import { Button } from "@/components/ui/button";
 
 export default function ContentViral() {
     const formSchema = z.object({
-        name: z.string().nonempty("Name is required"),
+        email: z.string().nonempty("Name is required"),
         instagramlink: z.string().nonempty("Instagram link is required"),
         // email: z.string().nonempty("Email is required"),
     });
@@ -25,7 +25,7 @@ export default function ContentViral() {
     const form = useForm({
         resolver: zodResolver(formSchema),
         defaultValues: {
-            name: "",
+            email: "",
             instagramlink: "",
             // email: ""
         }
@@ -37,13 +37,13 @@ export default function ContentViral() {
 
     const handleContactClick = () => {
         const values = form.getValues();
-        const name = values.name.trim();
+        const name = values.email.trim();
         const instagramLink = values.instagramlink.trim();
 
         if (!name || !instagramLink) {
             // Optionally, you can set error messages in the form
             if (!name) {
-                form.setError("name", {
+                form.setError("email", {
                     type: "manual",
                     message: "Name is required",
                 });
@@ -58,7 +58,7 @@ export default function ContentViral() {
         }
 
         const subject = encodeURIComponent("Contact Request: Viral Content");
-        const body = encodeURIComponent(`Hello Team,\n\nMy name is ${name}.\nHere is my Instagram post link: ${instagramLink}\n\nBest regards,\n${name}`);
+        const body = encodeURIComponent(`Hello Team,\n\nMy email id is ${name}.\nHere is my Instagram post link: ${instagramLink}\n\nBest regards,\n${name}`);
         
         window.location.href = `mailto:contact@ohiapp.com?subject=${subject}&body=${body}`;
     };
@@ -171,12 +171,12 @@ export default function ContentViral() {
                                 <div>
                                 <FormField
                                         control={form.control}
-                                        name="name"
+                                        name="email"
                                         render={({ field }) => (
                                             <FormItem className="form-area-4">
                                                 <FormLabel className="text-[24px] text-[#3BA0FF] poppins-medium">
                                                     <div className="flex">
-                                                        <h1>Name</h1>
+                                                        <h1>Email</h1>
                                                         <Asterisk className="text-red-500 w-4 -mt-2"/>
                                                     </div>
                                                 </FormLabel>
@@ -246,7 +246,7 @@ export default function ContentViral() {
                                         className="font-medium bg-[#3BA0FF] cursor-pointer rounded-full mb-[30px]"
                                         onClick={handleContactClick}
                                     >
-                                        Know More
+                                        Submit
                                     </Button>
                                 </div>
                             </form>

@@ -1,4 +1,4 @@
-import MobileImg from '@/assets/Ohi1.gif'
+import MobileImg from '@/assets/ohiapp2.gif'
 
 export default function CafeStories() {
   return (
