@@ -20,7 +20,7 @@ interface ModalProps {
     if (!isOpen) return null;
   
     return (
-      <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
+      <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-10">
         <div className="bg-white p-8 rounded-lg shadow-lg relative w-[658px]">
           <button
             className="absolute top-2 right-4 text-[#EECA07]"
@@ -120,7 +120,7 @@ export default function FAQ() {
                             <AccordionTrigger className="text-[12px] lg:text-[24px]" onClick={() => handleAccordionClick("How do I get my content viral?", "Share your content on O Hi and watch it get reshared by real people at cafes and airports, helping you reach a wider audience and go viral !")}>How do I get my content viral?</AccordionTrigger>
                         </AccordionItem>
                         <AccordionItem value="item-6">
-                            <AccordionTrigger className="text-[12px] lg:text-[24px]" onClick={() => handleAccordionClick("How do I make money on O Hi?", "Unlock earning potential on O Hi by resharing posts, checking in at cafes, and inviting your friends and followers to join the fun !")} >How make money on Ohi?</AccordionTrigger>
+                            <AccordionTrigger className="text-[12px] lg:text-[24px]" onClick={() => handleAccordionClick("How to make money on O Hi?", "Unlock earning potential on O Hi by resharing posts, checking in at cafes, and inviting your friends and followers to join the fun !")} >How to make money on Ohi?</AccordionTrigger>
                         </AccordionItem>
                     </Accordion>
                 </div>

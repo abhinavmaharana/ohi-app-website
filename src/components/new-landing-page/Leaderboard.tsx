@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import LaptopImg from '@/assets/laptop.png';
+import GooglePlayButton from '@/assets/Google Play.png'
+import AppStoreButton from '@/assets/App Store.png'
 
 export default function Leaderboard() {
   const [showPopup, setShowPopup] = useState(false);
@@ -22,7 +24,7 @@ export default function Leaderboard() {
                 Leaderboard
               </h1>
               <p className='text-white lg:text-[24px] poppins-medium lg:w-[490.29px]'>
-                Ready to find out whose life is really the most happening? No, seriously—this is your chance to prove it.
+              Build your squad and chase one goal—earning rewards with your friends check-in score! Compete for the top spot as teams with the highest scores secure a place on our leaderboard and win exciting prizes
               </p>
               <Button className="bg-white rounded-full text-[#3BA0FF] poppins-bold" onClick={handlePopup}>
                 Know More
@@ -33,9 +35,21 @@ export default function Leaderboard() {
       </div>
 
       {showPopup && (
-        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
-          <div className="bg-white p-6 rounded-lg max-w-lg text-center">
-            <p className="mb-6 poppins-medium">Build your squad and chase one goal—earning rewards with your check-in score! Compete for the top spot as teams with the highest scores secure a place on our leaderboard and win exciting prizes.</p>
+        // <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
+        //   <div className="bg-white p-6 rounded-lg max-w-lg text-center">
+        //     <p className="mb-6 poppins-medium">Build your squad and chase one goal—earning rewards with your check-in score! Compete for the top spot as teams with the highest scores secure a place on our leaderboard and win exciting prizes.</p>
+        //     <Button className="bg-[#3BA0FF] rounded-full text-white" onClick={handlePopup}>
+        //       Close
+        //     </Button>
+        //   </div>
+        // </div>
+        <div className="fixed inset-0 flex items-center justify-center z-50">
+          <div className="bg-white p-6 rounded-lg max-w-lg text-center shadow-lg">
+            <p className="mb-6 poppins-medium">Download the app to know more</p>
+            <div className="flex items-center justify-between space-x-5 mt-3 mb-5">
+              <img src={GooglePlayButton} />
+              <img src={AppStoreButton} />
+            </div>
             <Button className="bg-[#3BA0FF] rounded-full text-white" onClick={handlePopup}>
               Close
             </Button>

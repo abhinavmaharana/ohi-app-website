@@ -3,6 +3,8 @@ import LogoIcon from "@/assets/logonew1.png";
 import { Link } from "react-router-dom";
 import GooglePlayButton from '@/assets/Google Play.png'
 import AppStoreButton from '@/assets/App Store.png'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faSnapchat } from '@fortawesome/free-brands-svg-icons';
 
 export default function Footer() {
   // const [question, setQuestion] = useState('');
@@ -70,10 +72,10 @@ export default function Footer() {
           All Right Reserved.Copyright © 2024, All Rights Reserved.
         </div>
         <div className="flex gap-4">
-          <a href="https://twitter.com/SocialOhi">
+          <a href="https://www.instagram.com/ohi_socialnetwork/profilecard/?igsh=ZWN0NnQwOXFiMHhn">
             <img
               loading="lazy"
-              src="https://cdn.builder.io/api/v1/image/assets/TEMP/bfb4500130dc70e29214a98bbeca0e7b59fb48b499735e32b952073d07e64cae?"
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/92ad9f985b5e2c73e2b6105cdba9898ce65b18ddbcc260ab18acfb11b5f1fac8?"
               className="shrink-0 w-6 aspect-square"
             />
           </a>
@@ -84,12 +86,15 @@ export default function Footer() {
             className="shrink-0 w-6 aspect-square"
           />
           </a>
-          <a href="https://www.instagram.com/ohi_socialnetwork/profilecard/?igsh=ZWN0NnQwOXFiMHhn">
+          <a href="https://twitter.com/SocialOhi">
             <img
               loading="lazy"
-              src="https://cdn.builder.io/api/v1/image/assets/TEMP/92ad9f985b5e2c73e2b6105cdba9898ce65b18ddbcc260ab18acfb11b5f1fac8?"
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/bfb4500130dc70e29214a98bbeca0e7b59fb48b499735e32b952073d07e64cae?"
               className="shrink-0 w-6 aspect-square"
             />
+          </a>
+          <a href="https://www.snapchat.com/add/ohi_app">
+            <FontAwesomeIcon icon={faSnapchat} className="text-white shrink-0 w-6 aspect-square"/>
           </a>
         </div>
       </div>

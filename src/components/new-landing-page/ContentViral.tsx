@@ -159,7 +159,7 @@ export default function ContentViral() {
                        <div>
                        <h1 className='text-[32px] lg:text-[52px] text-[#3BA0FF] leading-normal  poppins-bold'>Looking to boost your brand's presence?</h1>
                         <p className='text-[18px] lg:text-[24px] text-[#3BA0FF] poppins-medium'>
-                        We're here to help! Share your Instagram post link with us at  <span className="bg-[#EECA07] text-white rounded-full px-3 shadow-xl" onClick={handleClick}>contact@ohiapp.com</span> and let us help you take your brand to new heights.
+                        Unleash the power of your content and watch it go viral! Just share your name and Instagram post link with us at <span className="bg-[#EECA07] text-white rounded-full px-3 shadow-xl" onClick={handleClick}>contact@ohiapp.com</span>, and let the virality begin!
                         </p>
                        </div>
                         <div>
