@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
-import { useState, useEffect, useRef } from "react";
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import GooglePlayButton from '@/assets/Google Play.png'
 import AppStoreButton from '@/assets/App Store.png'
