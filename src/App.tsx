@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Footer from "./components/shared/navigation/Footer";
 import Navbar from "./components/shared/navigation/Navbar";
-import HomePage from "./pages/home";
+// import HomePage from "./pages/home";
 import PrivacyPage from "./pages/privacy-page";
 import TermsPage from "./pages/terms-page";
 import ScrollToTop from "./hook/ScrollToTop";
@@ -17,8 +17,8 @@ function App() {
             <Navbar />
           </div>
           <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/new" element={<HomeAreaPage />} />
+            {/* <Route path="/" element={<HomePage />} /> */}
+            <Route path="/" element={<HomeAreaPage />} />
             <Route path="/privacy" element={<PrivacyPage />} />
             <Route path="/termcondition" element={<TermsPage />}/>
           </Routes>

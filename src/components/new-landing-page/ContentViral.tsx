@@ -183,7 +183,7 @@ export default function ContentViral() {
                                                 <FormControl>
                                                     <Input
                                                         className="cursor-pointer border-none bg-[#F4F4F4] outline-none"
-                                                        placeholder="Enter your name"
+                                                        placeholder="Enter your email"
                                                         {...field}
                                                     />
                                                 </FormControl>
