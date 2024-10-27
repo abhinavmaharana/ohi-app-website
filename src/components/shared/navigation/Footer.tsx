@@ -1,15 +1,19 @@
-import LogoIcon from "@/assets/logo.png";
-import { SetStateAction, useState } from "react";
+import LogoIcon from "@/assets/logonew1.png";
+// import { SetStateAction, useState } from "react";
 import { Link } from "react-router-dom";
+import GooglePlayButton from '@/assets/Google Play.png'
+import AppStoreButton from '@/assets/App Store.png'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faSnapchat } from '@fortawesome/free-brands-svg-icons';
 
 export default function Footer() {
-  const [question, setQuestion] = useState('');
+  // const [question, setQuestion] = useState('');
 
-  const handleQuestionChange = (e: { target: { value: SetStateAction<string>; }; }) => {
-    setQuestion(e.target.value);
-  };
+  // const handleQuestionChange = (e: { target: { value: SetStateAction<string>; }; }) => {
+  //   setQuestion(e.target.value);
+  // };
 
-  const mailtoLink = `mailto:contact@ohiapp.com?subject=Question&body=${encodeURIComponent(question)}`;
+  // const mailtoLink = `mailto:contact@ohiapp.com?subject=Question&body=${encodeURIComponent(question)}`;
 
   return (
     <div className="flex flex-col items-center p-20 bg-zinc-950 max-md:px-5">
@@ -17,7 +21,7 @@ export default function Footer() {
         <img
           loading="lazy"
           src={LogoIcon}
-          className="shrink-0 aspect-[1.69] w-[91px]"
+          className="w-[91px]"
         />
         <div className="flex gap-[57px] justify-between self-stretch text-base text-start text-zinc-400 lg:-ml-[250px]">
           <div className="flex flex-col">
@@ -29,7 +33,7 @@ export default function Footer() {
           </div>
           <div className="flex flex-col self-start">
             <div className="font-medium text-white leading-[150%]">
-              Legal Stuff
+              Useful Links
             </div>
             <div className="mt-4"><Link to="/termcondition">Terms & Condition</Link></div>
             <div className="mt-4"><Link to="/privacy">Privacy Policy</Link></div>
@@ -37,7 +41,17 @@ export default function Footer() {
           </div>
         </div>
         <div className="hidden md:flex flex-col mt-1">
-          <div className="text-base font-medium leading-6 text-center text-white">
+          <div className="text-white flex flex-col gap-[7px] justify-between">
+            {/* <h1>Get the App</h1> */}
+            <div className="font-medium text-white leading-[150%]">
+              Get the App
+            </div>
+            <div className="flex items-center justify-between space-x-5 mt-3">
+              <img src={GooglePlayButton} />
+              <img src={AppStoreButton} />
+            </div>
+          </div>
+          {/* <div className="text-base font-medium leading-6 text-center text-white">
             Reachout for any Questions
           </div>
           <textarea
@@ -50,18 +64,18 @@ export default function Footer() {
             <div className="justify-center self-start px-4 py-2.5 mt-4 text-sm leading-7 text-center text-white rounded-2xl border border-white border-solid cursor-pointer">
               Contact Now
             </div>
-          </a>
+          </a> */}
         </div>
       </div>
       <div className="flex gap-5 justify-between mt-28 w-full max-w-[1248px] max-md:flex-wrap max-md:mt-10 max-md:max-w-full">
         <div className="text-base text-center text-zinc-400 max-md:max-w-full">
-          All Right Reserved.Copyright © 2022, All Rights Reserved.
+          All Right Reserved.Copyright © 2024, All Rights Reserved.
         </div>
         <div className="flex gap-4">
-          <a href="https://twitter.com/SocialOhi">
+          <a href="https://www.instagram.com/ohi_socialnetwork/profilecard/?igsh=ZWN0NnQwOXFiMHhn">
             <img
               loading="lazy"
-              src="https://cdn.builder.io/api/v1/image/assets/TEMP/bfb4500130dc70e29214a98bbeca0e7b59fb48b499735e32b952073d07e64cae?"
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/92ad9f985b5e2c73e2b6105cdba9898ce65b18ddbcc260ab18acfb11b5f1fac8?"
               className="shrink-0 w-6 aspect-square"
             />
           </a>
@@ -72,12 +86,15 @@ export default function Footer() {
             className="shrink-0 w-6 aspect-square"
           />
           </a>
-          <a href="https://www.instagram.com/ohi_app?igsh=M2htNjJ3NWMyYnBt">
+          <a href="https://twitter.com/SocialOhi">
             <img
               loading="lazy"
-              src="https://cdn.builder.io/api/v1/image/assets/TEMP/92ad9f985b5e2c73e2b6105cdba9898ce65b18ddbcc260ab18acfb11b5f1fac8?"
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/bfb4500130dc70e29214a98bbeca0e7b59fb48b499735e32b952073d07e64cae?"
               className="shrink-0 w-6 aspect-square"
             />
+          </a>
+          <a href="https://www.snapchat.com/add/ohi_app">
+            <FontAwesomeIcon icon={faSnapchat} className="text-white shrink-0 w-6 aspect-square"/>
           </a>
         </div>
       </div>

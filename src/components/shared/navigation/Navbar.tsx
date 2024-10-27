@@ -1,64 +1,93 @@
 import { Menu, X } from "lucide-react";
-import { useState } from "react";
-import LogoIcon from "@/assets/logo.png";
+import { useEffect, useState } from "react";
+import LogoIcon from "@/assets/logonew1.png";
 import { Link } from "react-router-dom";
-// import PlatformDialog from "../platform-dialog/PlatformDialog";
-// import { Button } from "@/components/ui/button";
-import PlatformDialog from "../platform-dialog/PlatformDialog";
 
 export default function Navbar() {
-  const [state, setState] = useState(false);
+  const [isMenuOpen, setMenuOpen] = useState(false);
+  const [isScrolled, setScrolled] = useState(false);
 
   const menus = [
-    { title: "About us", path: "/#about" },
-    { title: "At Cafe", path: "/#atcafe" },
-    { title: "Get Famous", path: "/#earn" },
-    { title: "Earn Money", path: "/#make" },
-    { title: "Make Content Viral", path: "/#content" },
+    { title: "About us", path: "#about-new" },
+    { title: "At Cafe", path: "#atcafe-new" },
+    { title: "Get Famous", path: "#earn-new" },
+    { title: "Earn Money", path: "#make-new" },
+    { title: "Make Content Viral", path: "#content-new" },
   ];
 
+  // Handle scroll effect
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <nav className="text-black w-full md:border-0 flex items-center justify-between p-4 relative">
-      {/* Logo */}
-      <div className="flex items-center">
-        <Link to="/"><img src={LogoIcon} alt="Logo" className="h-[54px] w-[91px]" /></Link>
+    <nav
+      className={`fixed bg-white top-0 left-0 w-full z-50 transition-all duration-300 ${
+        isScrolled ? "bg-white shadow-lg rounded-full px-[40px] mt-5" : "bg-transparent"
+      }`}
+    >
+      <div className="flex items-center justify-between p-3">
+        {/* Logo */}
+        <Link to="/">
+          <img src={LogoIcon} alt="Logo" className="h-[40px] w-[80px]" />
+        </Link>
+
+        {/* Desktop Menu */}
+        <div className="hidden md:flex space-x-12">
+          {menus.map((menu, index) => (
+            <a
+              key={index}
+              href={menu.path}
+              className="text-[18px] hover:underline text-[#3BA0FF] poppins-medium"
+            >
+              {menu.title}
+            </a>
+          ))}
+        </div>
+
+        {/* Mobile Menu Icon */}
+        <div className="md:hidden z-50">
+          {isMenuOpen ? (
+            <X onClick={() => setMenuOpen(!isMenuOpen)} className="h-8 w-8 cursor-pointer text-black" />
+          ) : (
+            <Menu onClick={() => setMenuOpen(!isMenuOpen)} className="h-8 w-8 cursor-pointer" />
+          )}
+        </div>
       </div>
 
-      {/* Menu Icon for Mobile */}
-      <div className="md:hidden z-50">
-        {state ? (
-          <X onClick={() => setState(!state)} className="h-8 w-8 cursor-pointer text-black" />
-        ) : (
-          <Menu onClick={() => setState(!state)} className="h-8 w-8 cursor-pointer" />
-        )}
-      </div>
-
-      {/* Nav Links */}
+      {/* Mobile Menu Overlay */}
       <div
-        className={`fixed inset-0 z-40 flex flex-col items-center justify-center bg-white transition-transform transform ${
-          state ? "translate-x-0" : "translate-x-full"
-        } md:static md:flex md:flex-row md:items-center md:justify-end md:translate-x-0 md:bg-transparent space-x-5`}
+        className={`fixed inset-0 bg-white z-40 flex flex-col items-center justify-center transition-transform transform ${
+          isMenuOpen ? "translate-x-0" : "translate-x-full"
+        } md:hidden`}
       >
         {menus.map((menu, index) => (
           <a
             key={index}
             href={menu.path}
-            className="block md:inline-block mt-2 md:mt-0 md:ml-6 text-[20px] hover:underline font-light"
-            onClick={() => setState(false)} // Close the drawer when a link is clicked
+            className="text-[24px] mb-4 text-[#3BA0FF] poppins-medium"
+            onClick={() => setMenuOpen(false)} // Close menu after clicking a link
           >
             {menu.title}
           </a>
         ))}
-       {/* <a href="https://chat.ohiapp.com/chatroom">
-       <Button className="bg-[#006241] hover:bg-[#006241] px-[35px] py-[28px] rounded-[14px] mt-4 md:mt-0">
-          Join O hi
-        </Button>
-       </a> */}
-       <PlatformDialog />
       </div>
 
-      {/* Overlay */}
-      {state && <div className="fixed inset-0 bg-black opacity-50 z-30" onClick={() => setState(false)}></div>}
+      {/* Overlay Background when Mobile Menu is Open */}
+      {isMenuOpen && (
+        <div className="fixed inset-0 bg-black opacity-50 z-30" onClick={() => setMenuOpen(false)}></div>
+      )}
     </nav>
   );
 }
