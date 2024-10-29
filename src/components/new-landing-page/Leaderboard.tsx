@@ -12,7 +12,7 @@ export default function Leaderboard() {
   };
 
   return (
-    <div id="earn-new" className='mt-[50px] lg:mt-0'>
+    <div id="" className='mt-[50px] lg:mt-0'>
       <div className=''>
         <div className='px-[20px] lg:mt-[50px]'>
           <div className='flex flex-col lg:flex-row items-center text-center lg:text-left'>
