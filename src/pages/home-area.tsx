@@ -12,7 +12,6 @@ export default function HomeAreaPage() {
         <div>
             <div className=''>
               <HomeNew />
-              
             </div>
             <div className=''>
             <Renowned />
