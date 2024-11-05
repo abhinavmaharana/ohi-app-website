@@ -10,7 +10,7 @@ export default function CafeStories() {
                 </div>
                 <div className='lg:w-[627px]'>
                     <h1 className="text-[32px] lg:text-[52px]  text-white poppins-bold">Time to flaunt your HAPPENING Life</h1>
-                    <p className="text-[18px] lg:text-[24px] text-white poppins-medium ">Snap those pics and share the fun on the O Hi app with your friends!</p>
+                    <p className="text-[18px] lg:text-[24px] text-white poppins-medium ">Snap those pics and share the fun on the O hi app with your friends!</p>
                 </div>
             </div>
             <div className=''>

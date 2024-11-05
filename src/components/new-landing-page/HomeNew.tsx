@@ -80,7 +80,7 @@ export default function HomeNew() {
                 </p>
                 <p className="text-white poppins-medium leading-normal text-center">
                     A social network with Authentic Connects, Fame, Stardom in <br />
-                    Cafes, Lounges, Airports.
+                    Cafes, Lounges & Airports.
                 </p>
                 <Button className="bg-white rounded-full text-[#3BA0FF] items-center poppins-bold lg:w-[206.28px]" onClick={handlePopup}>JOIN O HI</Button>
             </div>
