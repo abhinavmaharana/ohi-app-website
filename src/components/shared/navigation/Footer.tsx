@@ -47,8 +47,12 @@ export default function Footer() {
               Get the App
             </div>
             <div className="flex items-center justify-between space-x-5 mt-3">
-              <img src={GooglePlayButton} />
-              <img src={AppStoreButton} />
+              <a href="https://play.google.com/store/apps/details?id=com.crowdbook&pcampaignid=web_share" target="_blank">
+                <img src={GooglePlayButton} />
+              </a>
+              <a href="https://apps.apple.com/in/app/o-hi-app/id1537778945" target="_blank" rel="noopener noreferrer">
+                <img src={AppStoreButton} />
+              </a>
             </div>
           </div>
           {/* <div className="text-base font-medium leading-6 text-center text-white">

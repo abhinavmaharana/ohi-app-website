@@ -47,8 +47,12 @@ export default function Leaderboard() {
           <div className="bg-white p-6 rounded-lg max-w-lg text-center shadow-lg">
             <p className="mb-6 poppins-medium">Download the app to know more</p>
             <div className="flex items-center justify-between space-x-5 mt-3 mb-5">
-              <img src={GooglePlayButton} />
-              <img src={AppStoreButton} />
+              <a href="https://play.google.com/store/apps/details?id=com.crowdbook&pcampaignid=web_share" target="_blank">
+                <img src={GooglePlayButton} />
+              </a>
+              <a href="https://apps.apple.com/in/app/o-hi-app/id1537778945" target="_blank" rel="noopener noreferrer">
+                <img src={AppStoreButton} />
+              </a>
             </div>
             <Button className="bg-[#3BA0FF] rounded-full text-white" onClick={handlePopup}>
               Close
